@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>OGGAME</title>
+<link rel="stylesheet" href="css/guide.css" />
+</head>
+<body>
+<div class="wrapper">
+	<div class="load-bar">   
+		<div class="load-bar-inner" data-loading="0"> <span id="counter">0%</span> </div> 
+	</div>  
+</div>
+<div class="loading">
+  <div class="logo"></div>
+  <div class="dots animate">
+    <div class="dot"></div>
+    <div class="dot"></div>
+    <div class="dot"></div>
+    <div class="dot"></div>
+    <div class="dot"></div>
+  </div>
+</div>
+<script src="js/jquery-2.1.0.js"></script>
+<script>setInterval(function() {
+	document.querySelectorAll(".dots")[0].classList.remove('animate');
+	setTimeout(function() {
+			document.querySelectorAll(".dots")[0].classList.add('animate');
+		}, 200);
+	}, 3750);
+
+	$(function() {
+		var interval = setInterval(increment, 100);
+		var current = 0;
+		function increment() {
+			current++;
+			$('#counter').html(current + '%');
+			if(current == 100) {
+				current = 100;
+				clearInterval(interval);
+				window.location.href = "index.html"
+			}
+		}
+		$('.load-bar').mouseover(function() {
+			clearInterval(interval);
+		}).mouseout(function() {
+			interval = setInterval(increment, 100);
+		});
+	
+	});
+</script>
+</body></html>
