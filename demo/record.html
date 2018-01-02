@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>投注记录</title>
+	<script type="text/javascript" src="js/jquery-2.1.0.js"></script>
+	<script type="text/javascript" src="js/jquery.jedate.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/jedate.css">
+	<style type="text/css">
+		*{margin:0;padding:0;font-family: "微软雅黑";}
+		body{background: #070000 url('img/recordBg.jpg') no-repeat;background-size: 100% auto;padding-bottom: 38px;}
+		.fl{float: left;}
+		.fr{float: right;}
+		button{cursor: pointer;}
+		button,input,select,option{outline: none;border:none;}
+		input{background: transparent;}
+		.main{width: 1129px;margin:0 auto;}
+        .header{height: 171px;box-sizing:border-box;padding-top: 38px; }
+        .logo1{width: 171px;float: left;margin-right: 40px;}
+        .text{width: 98px;float: left;margin-top: 50px;}
+        .selectBox{margin:24px auto;line-height: 40px;overflow: hidden;width: 1129px;}
+        .select{width: 158px;height: 40px;
+        	cursor: pointer;
+        	background-image: url('img/down.png'),url('img/btn1.png');
+        	background-size: 7px auto,100% 100%;
+        	background-repeat: no-repeat,no-repeat;
+        	background-position:  114px 19px,left top;
+            padding-right: 17px;text-align: center;font-size: 17px;color: #fff;line-height: 36px;box-sizing: border-box;
+        }
+        .select select{
+         	appearance:none;
+         	height: 40px;
+			-moz-appearance:none;
+			-webkit-appearance:none;
+			background:transparent;
+			border: none;
+			font-size: 17px;color: #fff;
+
+        }
+        .select  option{background: #800000;font-size: 15px;color: #fff;width: 158px;height: 50px;line-height: 50px;text-indent: 10px; }
+         select::-ms-expand { display: none; }
+        .deal_title{color: #fff;font-size: 17px;margin-right: 20px;line-height: 36px;}
+        .deal{color: #fff;font-size: 17px;margin-left: 65px;}
+        .startTime{font-size: 20px;color: #fff;width: 149px;height: 40px;display: inline-block;text-align: center}
+		.add{width: 24px;display: inline-block;height: 24px;background: url('img/add.png') no-repeat;background-size: 100% 100%;font-size: 12px;color: #fff;line-height: 24px;text-align: center;cursor: pointer;margin:8px 0 0 27px;}
+		.reduce{width: 24px;display: inline-block;height: 24px;border:2px solid #aa7300;border-radius: 50%;line-height: 22px;text-align: center;color: #fff;font-size: 12px;cursor: pointer;box-sizing: border-box;margin:8px 27px 0 8px;}
+		.query{width: 196px;height: 40px;font-size: 21px;color: #fff;text-align: center;line-height: 36px;}
+		.query_table{width: 1129px;margin:0 auto;border-collapse:collapse;}
+		.query_table th{height: 50px;line-height: 50px;background: #800000;font-size: 21px;color: #fff;font-weight: normal;border-right: 1px solid #ff0000;}
+		.query_table td{border-right: 1px solid #4f0000;border-bottom: 1px solid #4f0000;font-size: 21px;color: #fff;text-align: center;padding:22px 0;}
+		.query_table th:last-child,.query_table td:last-child{border-right: none;width:345px;}
+		.query_table1{margin-top: 46px;}
+		.query_table th:first-child,.query_table td:first-child{width:115px;}
+		.query_table th:nth-child(2),.query_table td:nth-child(2){width:178px;}
+		.query_table th:nth-child(3),.query_table th:nth-child(4),.query_table td:nth-child(3),.query_table td:nth-child(4){width:245px;}
+	    .query_table tr:last-child td{border-bottom:none;}
+	    .shaow{
+	    	box-shadow:0 0 10px #000 inset;
+	    	-moz-box-shadow:0 0 10px #000 inset;               /* For Firefox3.6+ */
+			-webkit-box-shadow:0 0 10px #000 inset;           /* For Chrome5+, Safari5+ */
+	    	background: #88000b;border-radius: 20px;
+	    }
+	    .pages{height: 40px;line-height: 40px;color: #4f0000;font-size: 21px;margin-top: 100px;}
+	    .prev,.next{width: 125px;height: 40px;font-size: 21px;color: #fff;line-height: 36px;}
+		.prev{margin-right: 16px;}
+		.inputPage{width: 75px;height: 40px;text-align: center;color: #fff;font-size: 21px;line-height: 36px;display: inline-block;margin:0 10px 0 10px;}
+		.inputPage input{color: #fff;font-size: 21px;width: 75px;height: 38px;text-align: center;}
+		.inputPage1{margin:0 30px 0 0;cursor: pointer;}
+		
+
+		.jedateblue .daybox .arthead{background: #ca3131;}
+		.jedateblue .daysul td.actdate,.jedateblue .daysul td.actdate:hover, .jedateblue .daysul td.actdate .lunar {
+		    background-color: #ca3131;
+		}
+		.jedateblue .daysul td.other, .jedateblue .daysul td.other .nolunar, .jedateblue .daysul td.other .lunar{color: #ca3131; }
+		.jedateblue .daysul td.other, .jedateblue .daysul td.other .lunar{color:  #ca3131;}
+		.jedateblue .daysul td.actdate .nolunar{color: #fff;}
+		.jedateblue .mainfoot .btnscon span,.jedateblue .ymsbox .arthead,.jedateblue .daybox .arthead .ymbtn:hover{background: #ca3131; }
+		.btnscon .clear{display: none !important;}
+	</style>
+</head>
+<body>
+	<div class="main">
+		<div class="header">
+			<img src="img/logo1.png" alt="" class="logo1">
+			<img src="img/touzhu.png" alt="" class="text">
+		</div>
+		<div class="selectBox">
+			<div class="select fl">
+				<select>
+					<option value="0" style="display: none;">选择产品</option>
+					<option value="1">产品1</option>
+					<option value="2">产品2</option>
+				</select>
+			</div>
+			<div class="deal fl">
+				<span class="deal_title fl">交易时间</span>
+				<span class="startTime fl shaow" id="startTime"></span>
+				<span class="add fl" id="addStartTime">+1</span>
+				<span class="reduce fl" id="reduceStartTime">-1</span>
+				<span class="startTime fl shaow" id="endTime"></span>
+				<span class="add fl" id="addEndTime">+1</span>
+				<span class="reduce fl" id="reduceEndTime">-1</span>
+				
+			</div>
+			<button class="query fr shaow" type="button">
+					查询
+		    </button>
+		</div>
+		<table class="query_table">
+			<tr class="th">
+				<th>NO.</th>
+				<th>游戏</th>
+				<th>点数转入</th>
+				<th>点数转出</th>
+				<th>交易时间</th>
+			</tr>
+		</table>
+		<table class="query_table query_table1">
+			<tr>
+				<td>1</td>
+				<td>1</td>
+				<td>1</td>
+				<td>1</td>
+				<td>1</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>1</td>
+				<td>1</td>
+				<td>1</td>
+				<td>1</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>1</td>
+				<td>1</td>
+				<td>1</td>
+				<td>1</td>
+			</tr>
+
+
+		</table>
+		<div class="pages">
+		  共有0笔记录，共0页，转到
+		  <span class="inputPage shaow"><input type="text" value="20"></span>
+		  <span class="inputPage shaow inputPage1">跳转</span>
+		  每页显示	
+		  <span class="inputPage shaow">10</span>
+
+		  <button type="button" class="next fr shaow">下一页</button>
+		  <button type="button" class="prev fr shaow">上一页</button>
+		</div>
+		
+	</div>
+	<script type="text/javascript">
+	$(function(){
+
+		$("#startTime").jeDate({
+	        format: "YYYY-MM-DD",
+	        isinitVal: true,
+	        language:{
+	           name  : "cn",
+		        month : ["01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12"],
+		        weeks : [ "日", "一", "二", "三", "四", "五", "六" ],
+		        times : ["小时","分钟","秒数"],
+		        clear : "清空",
+		        today : "今天",
+		        yes   : "确定",
+		        close : "关闭"
+	        },
+	        // initDate: $.nowDate({DD:'-40'}),
+	        maxDate: $.nowDate({DD:0})
+	       
+	    });
+	    $("#addStartTime").click(function() {
+	    	var t=$("#startTime").html();
+	    	var timer=$.timeStampDate(t);
+	    	var s=parseInt(24*60*60);
+	    	console.log(timer)
+	    	var sum=$.timeStampDate(timer+s,'YYYY-MM-DD');
+	        $("#startTime").html(sum);
+	    	 
+	    });
+	    $("#reduceStartTime").click(function() {
+	    	var t=$("#startTime").html();
+	    	var timer=$.timeStampDate(t);
+	    	var s=parseInt(24*60*60);
+	    	console.log(timer)
+	    	var sum=$.timeStampDate(timer-s,'YYYY-MM-DD');
+	        $("#startTime").html(sum);
+	    	 
+	    });
+
+	    $("#endTime").jeDate({
+	        format: "YYYY-MM-DD",
+	        isinitVal: true,
+	        maxDate: $.nowDate({DD:0}),
+	        initDate: $.nowDate({DD:0}),
+	        language:{
+	           name  : "cn",
+		        month : ["01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12"],
+		        weeks : [ "日", "一", "二", "三", "四", "五", "六" ],
+		        times : ["小时","分钟","秒数"],
+		        clear : "清空",
+		        today : "今天",
+		        yes   : "确定",
+		        close : "关闭"
+	        }
+	    });
+	    $("#addEndTime").click(function() {
+	    	var t=$("#endTime").html();
+	    	var timer=$.timeStampDate(t);
+	    	var s=parseInt(24*60*60);
+	    	var sum=$.timeStampDate(timer+s,'YYYY-MM-DD');
+	        $("#endTime").html(sum);
+	    	 
+	    });
+	    $("#reduceEndTime").click(function() {
+	    	var t=$("#endTime").html();
+	    	var timer=$.timeStampDate(t);
+	    	var s=parseInt(24*60*60);
+	    	console.log(timer)
+	    	var sum=$.timeStampDate(timer-s,'YYYY-MM-DD');
+	        $("#endTime").html(sum);
+	    	 
+	    });
+	});
+		
+	</script>
+</body>
+</html>
