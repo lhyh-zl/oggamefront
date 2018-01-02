@@ -3,8 +3,11 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-	<title></title>
+	<title>OGGAME</title>
 	<script type="text/javascript">
+		/**
+		 * 重置根元素字体大小
+		 */
 		var docEl = document.documentElement,
 		resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
 		recalc = function () {
@@ -18,55 +21,26 @@
 		    document.addEventListener('DOMContentLoaded', recalc, false);
 		}
 	</script>
-	<style type="text/css">
-		*{margin:0;padding:0;}
-		html{min-width:1186px;}
-		li{list-style: none;}
-		body{padding-bottom: 200px;background-image: url('img/bg.png'),url('img/13.png');background-repeat: no-repeat,repeat-y;background-size: 100% auto,100% auto; }
-		.logo{width:330px;display: block;margin:0 auto;}
-		.footer{position: fixed;left: 0;bottom: 0;width: 100%;z-index: 10;}
-		.footer_img{width:1186px;display: block;margin:0 auto;}
-        .logos::after{display:block;clear:both;content:'';visibility:hidden;height:0;}
-		.heng{width: 1100px;display: block;margin:0 auto;}
-		.logos{margin:530px auto;width:1186px;position: relative;border-top:1px solid transparent;  }
-		.logos li{float: left;margin-right: 70px;height: 300px;margin-bottom: 100px;;}
-		.logos li:nth-child(5),.logos li:nth-child(7){margin-right: 200px;}
-		.logos li img{height: 295px;cursor: pointer;}
-		.shark{width:632px;position: absolute;right: -50px;top: 530px;z-index: 4;cursor: pointer; }
-		.header{padding-top: 28px;min-width: 1186px;}
-		.game-div{    width: 100%; font-size: 20px; text-align: center; margin-top: -40px; margin-bottom:5px;color: white;}
-		.game-btn a{text-align:center;font-size: 15px;padding: 5px 0; float: left;width:48%;margin-left:2%;display: block;color: #2b2b2b;background: url(img/gamebtn.jpg);background-size: 100% 100%;}
-		.game-btn a:hover{background: url(img/gamebtnhover.jpg);background-size: 100% 100%;}
-		@media screen and (max-width: 750px) {
-			html{max-width:750px;min-width: 1px;}
-			body{padding-bottom: 1.45rem;}
-		    .footer_img { width: 100%;}
-		    .header{padding-top: .18rem;max-width: 750px;min-width: 1px;}
-		    .logo{width:1.860rem;}
-		    .logos{width: 100%;margin: 1.8rem auto 0;box-sizing: border-box;padding: 0 0.2rem;}
-		    .logos li{margin-right:.4rem;height: 2rem;margin-bottom: 1rem;text-align: center;width: 4rem;}
-		    .logos li:nth-child(5), .logos li:nth-child(7){margin-right:3rem;}
-		    .logos li img{height: 1.7rem;cursor: pointer;}
-		    .shark{width:3.3rem;position: absolute;right: 0;top: 3.1rem; }
-		    .game-div{margin-top: -10px;font-size: .36rem;}
-		    .game-btn a{font-size: .3rem;}
-		}
-	</style>
+	<link rel="stylesheet" type="text/css" href="css/index.css"/>
 
 </head>
-<body>
-
+<body onload='createCode();'>
 	<div class="header">
 		<img src="img/logo.png" alt="" class="logo">	
+		<div class="user-info">
+			<span class="user-name">玩家账号:231ihsahd</span>
+			<button type="button" id="logout" onclick="logoutFunc();">退出</button>
+		</div>
 	</div>
 	<ul class="logos">
+		<!-- 游戏图标开始  -->
 		<li>
-			<img src="img/7.png" alt="">
+			<img src="img/1.png" alt="">
 			<div class="game-div">
 				<span class="game-name" id="">百家乐</span>
 			</div>
 			<div class="game-btn">
-				<a onclick="" style="cursor: pointer;">立刻开始</a>
+				<a onclick="startPlay();" style="cursor: pointer;">立刻开始</a>
 				<a onclick="" style="cursor: pointer;">免费试玩</a>
 			</div>				
 		</li>
@@ -76,7 +50,7 @@
 				<span class="game-name" id="">转转转</span>
 			</div>		
 			<div class="game-btn">
-				<a onclick="" style="cursor: pointer;">立刻开始</a>
+				<a onclick="startPlay();" style="cursor: pointer;">立刻开始</a>
 				<a onclick="" style="cursor: pointer;">免费试玩</a>
 			</div>	
 		</li>
@@ -86,37 +60,100 @@
 				<span class="game-name" id="">百家乐</span>
 			</div>	
 			<div class="game-btn">
-				<a onclick="" style="cursor: pointer;">立刻开始</a>
+				<a onclick="startPlay();" style="cursor: pointer;">立刻开始</a>
 				<a onclick="" style="cursor: pointer;">免费试玩</a>
 			</div>					
 		</li>
 		<li>
-			<img src="img/10.png" alt="">
+			<img src="img/lunpan.png" alt="">
 			<div class="game-div">
 				<span class="game-name" id="">百家乐</span>
 			</div>	
 			<div class="game-btn">
-				<a onclick="" style="cursor: pointer;">立刻开始</a>
+				<a onclick="startPlay();" style="cursor: pointer;">立刻开始</a>
 				<a onclick="" style="cursor: pointer;">免费试玩</a>
 			</div>				
 		</li>
-		<li>
-			<img src="img/4.png" alt="">
-			<div class="game-div">
-				<span class="game-name" id="">百家乐</span>
-			</div>	
-			<div class="game-btn">
-				<a onclick="" style="cursor: pointer;">立刻开始</a>
-				<a onclick="" style="cursor: pointer;">免费试玩</a>
-			</div>				
-		</li>
+		<!-- 游戏图标结束  -->
 		<!--
-			捕鱼游戏，单独的样式
+			捕鱼游戏，单独的样式,暂时用不上，先隐藏 display:none;
 		-->
-	    <img src="img/5.png" alt="" class="shark">
+	    <img src="img/5.png" alt="" class="shark" style="display: none;">
 	</ul>
 	<div class="footer">
 	    <img src="img/foot.png" alt="" class="footer_img">
 	</div>
+	
+	
+	<!--  登录模块开始   -->
+	<div class="login-wrapper">
+		<div class="login-bg">
+		</div>
+		<div class="login-div-out" id="login-div-out">
+			<div class="login-div-inner">
+				<div class="login-value">
+					<span id="">用户名：</span>
+					<input type="text" id="username" placeholder="请输入用户名"/>
+				</div>
+				<div class="login-value">
+					<span id="">密码：</span>
+					<input type="password" id="password" placeholder="请输入密码"/>
+				</div>
+				<div class="login-code">
+					<input type = "text" id = "codevalue" placeholder="输入校验码"/>  
+			  		<input type="button" id="ogcode" onclick="createCode()" title='点击更换验证码' />
+		  		</div>
+				<button type="button" id="loginBtn" onclick="loginFunc();">登录</button>					
+			</div>
+		</div>		
+	</div>
+	<!--  登录模块结束   -->
 </body>
+<script src="js/gCode.js"></script>
+<script src="js/jquery-2.1.0.js"></script>
+<script type="text/javascript">
+	var isLogin = false;
+	/**
+	 * 登录
+	 */
+	var loginFunc = function(){
+		if(validate()){
+			$(".login-wrapper").hide();
+			$(".user-info").show();
+			isLogin = true;
+		}
+	};
+	
+	/**
+	 * 退出
+	 */
+	var logoutFunc = function(){
+		isLogin = false;
+		$(".user-info").hide();		
+	};
+	/**
+	 * 关闭登录窗口
+	 */	
+	$(".login-wrapper").click(function(e){
+		e = window.event || e;
+		var obj = e.srcElement || e.target;
+		if($(obj).is(".login-div-out")) {
+			$(".login-wrapper").hide();
+		}
+	});
+	/**
+	 * 正式玩
+	 */
+	var startPlay = function(){
+		if(!isLogin){
+			createCode();
+			$("#codevalue").val("");
+			$(".login-wrapper").show();		
+		}else{
+			
+		}
+
+	};
+	
+</script>
 </html>
