@@ -43,12 +43,15 @@ input{background: transparent;}
 .query_table{width: 1129px;margin:0 auto;border-collapse:collapse;}
 .query_table th{height: 50px;line-height: 50px;background: #800000;font-size: 21px;color: #fff;font-weight: normal;border-right: 1px solid #ff0000;}
 .query_table td{border-right: 1px solid #4f0000;border-bottom: 1px solid #4f0000;font-size: 21px;color: #fff;text-align: center;padding:22px 0;}
-.query_table th:last-child,.query_table td:last-child{border-right: none;width:345px;}
+.query_table th:last-child,.query_table td:last-child{border-right: none;}
 .query_table1{margin-top: 46px;}
 .query_table th:first-child,.query_table td:first-child{width:115px;}
-.query_table th:nth-child(2),.query_table td:nth-child(2){width:178px;}
-.query_table th:nth-child(3),.query_table th:nth-child(4),.query_table td:nth-child(3),.query_table td:nth-child(4){width:245px;}
-.query_table tr:last-child td{border-bottom:none;}
+/*.query_table th:nth-child(2),.query_table td:nth-child(2){width:178px;}
+.query_table th:nth-child(3),.query_table th:nth-child(4),.query_table td:nth-child(3),.query_table td:nth-child(4){width:245px;}*/
+/*.query_table tr:last-child td{border-bottom:none;}*/
+.break-line-tr{border: none !important;height: 46px;}
+.break-line-td{border: none !important;}
+
 .shaow{
 	box-shadow:0 0 10px #000 inset;
 
