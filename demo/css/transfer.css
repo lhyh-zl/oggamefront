@@ -20,7 +20,10 @@ input{background: transparent;}
 }
 .select select{
  	appearance:none;
- 	height: 40px;
+ 	height: 36px;
+ 	cursor: pointer;
+ 	width: 158px;
+ 	text-indent: 33px;
  	text-align: center;
 	-moz-appearance:none;
 	-webkit-appearance:none;
@@ -29,7 +32,7 @@ input{background: transparent;}
 	font-size: 17px;color: #fff;
 
 }
-.select  option{background: #800000;font-size: 15px;color: #fff;width: 158px;height: 50px;line-height: 50px;text-indent: 10px; }
+.select  option{background: #800000;font-size: 15px;color: #fff;width: 158px;;text-indent: 10px;}
  select::-ms-expand { display: none; }
 .deal_title{color: #fff;font-size: 17px;margin-right: 20px;line-height: 36px;}
 .deal{color: #fff;font-size: 17px;margin-left: 65px;}
@@ -48,6 +51,7 @@ input{background: transparent;}
 .query_table tr:last-child td{border-bottom:none;}
 .shaow{
 	box-shadow:0 0 10px #000 inset;
+
 	-moz-box-shadow:0 0 10px #000 inset;               /* For Firefox3.6+ */
 	-webkit-box-shadow:0 0 10px #000 inset;           /* For Chrome5+, Safari5+ */
 	background-color: #88000b;border-radius: 20px;
@@ -82,10 +86,11 @@ input{background: transparent;}
 .select1{margin:15px 0 0 46px;}
 .transfer_money {line-height: 71px;}
 .transfer_table{border-collapse:collapse;}
-.transfer_table td{font-size: 17px;}
-.transfer_table td:first-child{width: 380px;text-indent: 43px;}
-.transfer_table td:last-child{width: 250px;height: 71px;line-height: 71px;}
-.transfer_table td:nth-child(2){width: 252px;color: #fff;font-size: 17px;height: 71px;line-height: 71px;}
+.transfer_table td{font-size: 17px;padding: 17px 0;}
+.transfer_table td:first-child{width: 380px;padding: 0 30px 0 43px;box-sizing: border-box;}
+.transfer_table td:last-child{width: 250px;}
+.transfer_table td:nth-child(2){width: 252px;color: #fff;font-size: 17px;line-height: 37px;}
 .tranform_btn{width: 165px;height: 37px;background: url(../img/tranform.png) no-repeat;background-size: 100% auto;cursor: pointer;}
+.tranform_btn1{width: 165px;height: 37px;background: url(../img/tranform1.png) no-repeat;background-size: 100% auto;cursor: pointer;}
 .item_title1{min-height: 500px;box-sizing: border-box;line-height: 500px;}
 .contaner{margin-top: 25px;}
