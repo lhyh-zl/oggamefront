@@ -42,11 +42,13 @@ input::-webkit-input-placeholder ,
 textarea::-webkit-input-placeholder {
   	color: #7e000c;
 } 
-.user-info{display:none;width: 80%;margin-left: 10%;background: rgba(178, 3, 23,.8);border-radius: 20px;height: 40px;margin-top: 50px;}
-.user-info .user-name{ display: block; font-size: 14px; width: 200px; height: 40px; line-height: 40px; margin-left: 80px; color: #ffd319; float: left; }
-#logout{    border: none; border-radius: 20px; height: 20px; line-height: 20px; font-size: 13px; color: #d8b91a; background: #dd0505; width: 100px; float: right; margin: 10px 80px 10px 0; outline: none;}
+.user-info{display:none;width: 80%;margin-left: 10%;background: rgba(178, 3, 23,.8);border-radius: 50px;height: 60px;margin-top: 50px;}
+.user-info .user-name{ display: block; font-size: 18px; width: 200px; height: 60px; line-height: 60px; margin-left: 80px; color: #ffffff; float: left; }
+.user-info .user-func{display: block; font-size: 18px; width: 100px; height: 60px; line-height: 60px; color: #d8b91a; float: left; text-align: center;}
+.user-info .break-line{ display: block; font-size: 18px; width: 5px; height: 60px; line-height: 60px; color: #d8b91a; float: left; }
+#logout{    border: none; border-radius: 20px; height: 40px; line-height: 40px; font-size: 16px; color: #d8b91a; background: #dd0505; width: 100px; float: left; margin: 10px 60px 10px 20px; outline: none;}
 #logout:hover{background: #b10416;}
-
+.user-op{width: 500px; float: left; height: 60px; line-height: 60px; margin-left: 290px;}
 @media screen and (max-width: 750px) {
 	html{max-width:750px;min-width: 1px;}
 	body{padding-bottom: 1.45rem;}
