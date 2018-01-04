@@ -1,7 +1,9 @@
 <!DOCTYPE html>
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>OGGAME</title>
-<link rel="stylesheet" href="css/guide.css" />
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>OGGAME</title>
+	<link rel="stylesheet" href="css/guide.css" />
 </head>
 <body>
 <div class="wrapper">
@@ -20,13 +22,21 @@
   </div>
 </div>
 <script src="js/jquery-2.1.0.js"></script>
-<script>setInterval(function() {
-	document.querySelectorAll(".dots")[0].classList.remove('animate');
-	setTimeout(function() {
+<script>
+	/**
+	 * 引导页logo白点动画效果
+	 */
+	setInterval(function() {
+		document.querySelectorAll(".dots")[0].classList.remove('animate');
+		setTimeout(function() {
 			document.querySelectorAll(".dots")[0].classList.add('animate');
 		}, 200);
 	}, 3750);
 
+	/**
+	 * 引导页进度条
+	 * 进度条到100%时跳转首页index.html
+	 */
 	$(function() {
 		var interval = setInterval(increment, 100);
 		var current = 0;
