@@ -21,8 +21,8 @@ body{padding-bottom: 200px;background-image: url('../img/bg.png'),url('../img/13
 .login-div-out{position: fixed; width: 100%; text-align: center; top: 0;}
 .login-div-inner{width: 400px; height: 400px;font-size: 20px;margin: 100px auto 0 auto;background-size: 100%;padding-top: 60px; background: url(../img/login_back.png) no-repeat; background-size: 100%;}
 .login-value{margin-top: 10px;height: 35px;}
-.login-value span{font-weight: bold;color:#ff9c00;font-size: 16px; width: 20%; display: inline-block; float: left; height: 30px; line-height: 30px; text-align: left; padding-left: 70px;}
-.login-value input{outline:none;border: none;background: url(../img/input2.png) no-repeat;background-size:100% 100%;padding-left:20px;font-size: 18px; color:#ff9c00;width: 38%; display: block; float: left; line-height: 30px; height: 30px; text-align: left;back}
+.login-value span{font-weight: bold;color:#ff9c00;font-size: 16px; width: 20%; display: inline-block; float: left; height: 30px; line-height: 30px; text-align: left; padding-left: 19%;}
+.login-value input{outline:none;border: none;background: url(../img/input2.png) no-repeat;background-size:100% 100%;padding-left:30px;font-size: 18px; color:#ff9c00;width: 35%; display: block; float: left; line-height: 30px; height: 30px; text-align: left;back}
 .login-code{margin-top: 10px;}
 #ogcode{cursor: pointer;outline:none;width: 80px;color: #ff0421;background:transparent;font-size: 20px; border:0; padding:2px 3px; letter-spacing:3px; font-weight:bolder;     }
 .login-code #codevalue{text-align:center;color:#ff9c00;font-weight:bold;outline: none; border: none; background: url(../img/input2.png)no-repeat; background-size: 100% 100%; height: 28px; line-height: 30px;width: 26%; margin-right: 16%; border-radius: 20px;}
@@ -49,6 +49,9 @@ textarea::-webkit-input-placeholder {
 #logout{cursor: pointer;border: none; border-radius: 20px; height: 40px; line-height: 40px; font-size: 16px; color: #d8b91a; background: #dd0505; width: 100px; float: left; margin: 10px 60px 10px 20px; outline: none;}
 #logout:hover{background: #b10416;}
 .user-op{width: 500px; float: left; height: 60px; line-height: 60px; margin-left: 400px;}
+.login-value-subfix .subfix{width: 20px; float: left; padding: 0; position: absolute; z-index: 100; display: block; margin-left: 10px;}
+.login-value-subfix{width: 35%; float: left; line-height: 30px; height: 30px;}
+.login-value-subfix input{width: 100%;}
 @media screen and (max-width: 750px) {
 	html{max-width:750px;min-width: 1px;}
 	body{padding-bottom: 1.45rem;}
@@ -64,9 +67,12 @@ textarea::-webkit-input-placeholder {
     .game-btn a{font-size: .3rem;}
     .login-wrapper{position: fixed;width: 100%;height: 100%;top: 0;bottom: 0;}
     .login-bg{    background-size: 100% 100%;top: 0;bottom: 0;}
-    .login-div-inner{width: 100%;}
+    .login-div-inner{width: 100%;padding-top: .8rem;}
+    .login-code{margin-top: 4px;}
     .user-info .user-func{    width: 30%; font-size: .36rem;}
     .user-info .user-name{font-size: .36rem;margin-left:.36rem;width: 100%;text-align: center;margin-left: 0;}
     .user-op{width: 100%; clear: left; margin-left: 0;}
     #logout{position: absolute; top: 0; right: -50px; height: 30px; line-height: 30px; font-size: .26rem;}
+	.login-value input{font-size: .35rem;}
+	.login-value-subfix .subfix{font-size: .33rem;margin-left: 8px;}
 }
