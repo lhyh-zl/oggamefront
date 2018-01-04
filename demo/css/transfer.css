@@ -49,8 +49,8 @@ input{background: transparent;}
 /*.query_table th:nth-child(2),.query_table td:nth-child(2){width:178px;}
 .query_table th:nth-child(3),.query_table th:nth-child(4),.query_table td:nth-child(3),.query_table td:nth-child(4){width:245px;}*/
 /*.query_table tr:last-child td{border-bottom:none;}*/
-.break-line-tr{border: none !important;height: 46px;}
-.break-line-td{border: none !important;}
+.break-line-tr{border: none !important;height: 20px;}
+.break-line-tr .break-line-td{border: none !important;padding:10px 0;}
 
 .shaow{
 	box-shadow:0 0 10px #000 inset;
