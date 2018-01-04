@@ -22,6 +22,7 @@
 		}
 	</script>
 	<link rel="stylesheet" type="text/css" href="css/index.css"/>
+	<link rel="stylesheet" type="text/css" href="css/layer.css"/>
 
 </head>
 <body onload='createCode();'>
@@ -118,6 +119,10 @@
 </body>
 <script src="js/gCode.js"></script>
 <script src="js/jquery-2.1.0.js"></script>
+<!--
+	layer弹层插件,注意需要引入layer.css,需要把loading-1.gif 放在layer.css同级目录下
+-->
+<script src="js/layer.js"></script>
 <script type="text/javascript">
 	var isLogin = false;
 	/**
@@ -125,9 +130,15 @@
 	 */
 	var loginFunc = function(){
 		if(validate()){
-			$(".login-wrapper").hide();
-			$(".user-info").show();
-			isLogin = true;
+			layer.load(1);//加载load层
+			setTimeout(function(){
+				
+				layer.closeAll();  //关闭loading层
+				
+				$(".login-wrapper").hide();
+				$(".user-info").show();
+				isLogin = true;				
+			},3000)
 		}
 	};
 	
