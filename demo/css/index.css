@@ -19,9 +19,9 @@ body{padding-bottom: 200px;background-image: url('../img/bg.png'),url('../img/13
 .game-btn{width: 80%; margin-left: 10%;}
 .game-btn a{text-align:center;font-size: 15px;padding: 5px 0; float: left;width:46%;margin-left:4%;display: block;color: #2b2b2b;background: url(../img/gamebtn.jpg);background-size: 100% 100%;}
 .game-btn a:hover{background: url(../img/gamebtnhover.jpg);background-size: 100% 100%;}
-.login-wrapper{display: none;}
-.login-bg { background: url('../img/bg.png'); background-repeat: no-repeat;background-position: 0 0;background-size: 100% ; position: fixed; width: 100%; height: 100%; top: -10px;-webkit-filter: blur(6px); -moz-filter: blur(6px); -o-filter: blur(6px); -ms-filter: blur(6px); filter: blur(6px); }
-.login-div-out{position: fixed; width: 100%; text-align: center; top: 0;}
+.login-wrapper{display: none;z-index: 5;}
+.login-bg { z-index: 5;background: url('../img/bg.png'); background-repeat: no-repeat;background-position: 0 0;background-size: 100% ; position: fixed; width: 100%; height: 100%; top: -10px;-webkit-filter: blur(6px); -moz-filter: blur(6px); -o-filter: blur(6px); -ms-filter: blur(6px); filter: blur(6px); }
+.login-div-out{z-index: 5;position: fixed; width: 100%; text-align: center; top: 0;}
 .login-div-inner{width: 400px; height: 400px;font-size: 20px;margin: 100px auto 0 auto;background-size: 100%;padding-top: 60px; background: url(../img/login_back.png) no-repeat; background-size: 100%;}
 .login-value{margin-top: 10px;height: 35px;}
 .login-value span{font-weight: bold;color:#ff9c00;font-size: 16px; width: 20%; display: inline-block; float: left; height: 30px; line-height: 30px; text-align: left; padding-left: 19%;}
@@ -45,7 +45,7 @@ input::-webkit-input-placeholder ,
 textarea::-webkit-input-placeholder {
   	color: #7e000c;
 } 
-.user-info{display:none;width: 80%;margin-left: 10%;background: rgba(178, 3, 23,.8);border-radius: 50px;height: 60px;margin-top: 50px;}
+.user-info{display:none;width: 90%;margin-left: 5%;background: rgba(178, 3, 23,.8);border-radius: 50px;height: 60px;margin-top: 50px;}
 .user-info .user-name{ display: block; font-size: 18px; width: 200px; height: 60px; line-height: 60px; margin-left: 80px; color: #ffffff; float: left; }
 .user-info .user-func{display: block; font-size: 18px; width: 100px; height: 60px; line-height: 60px; color: #d8b91a; float: left; text-align: center;}
 .user-info .break-line{ display: block; font-size: 18px; width: 5px; height: 60px; line-height: 60px; color: #d8b91a; float: left; }
