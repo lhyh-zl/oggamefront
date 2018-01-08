@@ -10,7 +10,7 @@ input{background: transparent;}
 .logo1{width: 171px;float: left;margin-right: 40px;}
 .text{width: 98px;float: left;margin-top: 50px;}
 .selectBox{margin:24px auto;line-height: 40px;overflow: hidden;width: 1129px;}
-.select{width: 158px;height: 40px;
+.select{width: 175px;height: 40px;
 	cursor: pointer;
 	background: url('../img/down.png');
 	background-size: 7px auto;
@@ -22,7 +22,7 @@ input{background: transparent;}
  	appearance:none;
  	height: 36px;
  	cursor: pointer;
- 	width: 158px;
+ 	width: 170px;
  	text-indent: 18px;
  	text-align: center;
 	-moz-appearance:none;
@@ -60,9 +60,9 @@ input{background: transparent;}
 	background-color: #88000b;border-radius: 20px;
 }
 .pages{height: 40px;line-height: 40px;color: #4f0000;font-size: 21px;margin-top: 100px;}
-.prev,.next{width: 125px;height: 40px;font-size: 18px;color: #fff;line-height: 36px;}
+.prev,.next{width: 110px;height: 40px;font-size: 18px;color: #fff;line-height: 36px;}
 .prev{margin-right: 14px;}
-.inputPage{width: 75px;height: 40px;text-align: center;color: #fff;font-size: 18px;line-height: 36px;display: inline-block;margin:0 10px 0 10px;}
+.inputPage{width: 75px;height: 40px;text-align: center;color: #fff;font-size: 18px;line-height: 36px;display: inline-block;margin:0;}
 .inputPage input{color: #fff;font-size: 18px;width: 75px;height: 38px;text-align: center;}
 .inputPage1{cursor: pointer;}
 
@@ -93,12 +93,12 @@ input{background: transparent;}
 .transfer_table td:first-child{width: 380px;padding: 0 30px 0 43px;box-sizing: border-box;}
 .transfer_table td:last-child{width: 250px;}
 .transfer_table td:nth-child(2){width: 252px;color: #fff;font-size: 17px;line-height: 37px;}
-.tranform_btn{width: 100%;height: 37px;background: url(../img/tranform.png) no-repeat;background-size: 100% auto;cursor: pointer;}
-.tranform_btn1{width: 100%;height: 37px;background: url(../img/tranform1.png) no-repeat;background-size: 100% auto;cursor: pointer;}
+.tranform_btn{width: 100%;height: 37px;background: url(../img/zhuanzhangbak.png) no-repeat;background-size: 100% auto;cursor: pointer;}
+.tranform_btn1{width: 100%;height: 37px;background: url(../img/zhuanzhangbak.png) no-repeat;background-size: 100% auto;cursor: pointer;}
 .item_title1{min-height: 500px;box-sizing: border-box;line-height: 500px;}
 .contaner{margin-top: 25px;}
 .query-tranfser{width: 80px;height: 40px;font-size: 18px;color: #fff;text-align: center;margin: 15px 10px 0 20px;}
 *{font-family: "微软雅黑",'Kanit',Tahoma,Verdana, Helvetica, sans-serif;}
-.tranform_btn1,.tranform_btn{text-align: center; line-height: 37px; font-size: 15px; color: #be7900; font-weight: bold;background: url(img/zhuanzhangbak.png) no-repeat;background-size: 100% auto;}
-.page-name{color: #e2aa19; display: block; font-size: 24px; width: 200px; float: left; margin-top: 50px; text-align: center; height: 23px; line-height: 23px; font-weight: bold;}
+.tranform_btn1,.tranform_btn{text-align: center; line-height: 37px; font-size: 15px; color: #be7900; font-weight: bold;background: url(../img/zhuanzhangbak.png) no-repeat;background-size: 100% auto;}
+.page-name{color: #e2aa19; display: block; font-size: 24px; width: 270px; float: left; margin-top: 50px; text-align: center; height: 23px; line-height: 23px; font-weight: bold;}
 .lan{margin-top: 40px;}
