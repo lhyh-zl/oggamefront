@@ -100,5 +100,5 @@ input{background: transparent;}
 .query-tranfser{width: 80px;height: 40px;font-size: 18px;color: #fff;text-align: center;margin: 15px 10px 0 20px;}
 *{font-family: "微软雅黑",'Kanit',Tahoma,Verdana, Helvetica, sans-serif;}
 .tranform_btn1,.tranform_btn{text-align: center; line-height: 37px; font-size: 15px; color: #be7900; font-weight: bold;background: url(img/zhuanzhangbak.png) no-repeat;background-size: 100% auto;}
-.page-name{color: #e2aa19; display: block; font-size: 24px; width: 98px; float: left; margin-top: 50px; text-align: center; height: 23px; line-height: 23px; font-weight: bold;}
+.page-name{color: #e2aa19; display: block; font-size: 24px; width: 200px; float: left; margin-top: 50px; text-align: center; height: 23px; line-height: 23px; font-weight: bold;}
 .lan{margin-top: 40px;}
