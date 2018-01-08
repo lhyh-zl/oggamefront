@@ -22,13 +22,13 @@ body{padding-bottom: 200px;background-image: url('../img/bg.png'),url('../img/13
 .login-wrapper{display: none;z-index: 5;}
 .login-bg { z-index: 5;background: url('../img/bg.png'); background-repeat: no-repeat;background-position: 0 0;background-size: 100% ; position: fixed; width: 100%; height: 100%; top: -10px;-webkit-filter: blur(6px); -moz-filter: blur(6px); -o-filter: blur(6px); -ms-filter: blur(6px); filter: blur(6px); }
 .login-div-out{z-index: 5;position: fixed; width: 100%; text-align: center; top: 0;}
-.login-div-inner{width: 400px; height: 400px;font-size: 20px;margin: 100px auto 0 auto;background-size: 100%;padding-top: 60px; background: url(../img/login_back.png) no-repeat; background-size: 100%;}
+.login-div-inner{width: 450px; height: 400px;font-size: 20px;margin: 100px auto 0 auto;background-size: 100%;padding-top: 60px; background: url(../img/login_back.png) no-repeat; background-size: 100%;}
 .login-value{margin-top: 10px;height: 35px;}
-.login-value span{font-weight: bold;color:#ff9c00;font-size: 16px; width: 20%; display: inline-block; float: left; height: 30px; line-height: 30px; text-align: left; padding-left: 19%;}
-.login-value input{outline:none;border: none;background: url(../img/input2.png) no-repeat;background-size:100% 100%;padding-left:30px;font-size: 18px; color:#ff9c00;width: 35%; display: block; float: left; line-height: 30px; height: 30px; text-align: left;back}
-.login-code{margin-top: 10px;}
+.login-value span{font-weight: bold;color:#ff9c00;font-size: 16px; width: 23%; display: inline-block; float: left; height: 30px; line-height: 30px; text-align: left; padding-left: 19%;}
+.login-value input{outline:none;border: none;background: url(../img/input2.png) no-repeat;background-size:100% 100%;padding-left:30px;font-size: 16px; color:#ff9c00;width: 35%; display: block; float: left; line-height: 30px; height: 30px; text-align: left;back}
+.login-code{margin-top: 20px;}
 #ogcode{cursor: pointer;outline:none;width: 80px;color: #ff0421;background:transparent;font-size: 20px; border:0; padding:2px 3px; letter-spacing:3px; font-weight:bolder;     }
-.login-code #codevalue{text-align:center;color:#ff9c00;font-weight:bold;outline: none; border: none; background: url(../img/input2.png)no-repeat; background-size: 100% 100%; height: 28px; line-height: 30px;width: 26%; margin-right: 16%; border-radius: 20px;}
+.login-code #codevalue{text-align:center;color:#ff9c00;font-weight:bold;outline: none; border: none; background: url(../img/input2.png)no-repeat; background-size: 100% 100%; height: 28px; line-height: 30px;width: 40%; margin-right: 5%; border-radius: 20px;}
 #loginBtn:hover { background:url(../img/login_btn_ro.png) no-repeat; background-size: 100% 100%;}
 #loginBtn{cursor: pointer;outline:none;width: 74%;border: none;background: url(../img/login_btn.png) no-repeat;background-size: 100% 100%;color: white;height: 70px;padding: 10px;font-weight: bold;}
 :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
@@ -46,12 +46,12 @@ textarea::-webkit-input-placeholder {
   	color: #7e000c;
 } 
 .user-info{display:none;width: 90%;margin-left: 5%;background: rgba(178, 3, 23,.8);border-radius: 50px;height: 60px;margin-top: 50px;}
-.user-info .user-name{ display: block; font-size: 18px; width: 200px; height: 60px; line-height: 60px; margin-left: 80px; color: #ffffff; float: left; }
-.user-info .user-func{display: block; font-size: 18px; width: 100px; height: 60px; line-height: 60px; color: #d8b91a; float: left; text-align: center;}
+.user-info .user-name{display: block;font-size: 18px;width: 260px;height: 60px;line-height: 60px;margin-left: 60px;color: #ffffff;float: left;}
+.user-info .user-func{display: block;font-size: 18px;width: 180px;height: 60px;line-height: 60px;color: #d8b91a;float: left;text-align: center;}
 .user-info .break-line{ display: block; font-size: 18px; width: 5px; height: 60px; line-height: 60px; color: #d8b91a; float: left; }
-#logout{cursor: pointer;border: none; border-radius: 20px; height: 40px; line-height: 40px; font-size: 16px; color: #d8b91a; background: #dd0505; width: 100px; float: left; margin: 10px 60px 10px 20px; outline: none;}
+#logout{cursor: pointer;border: none;border-radius: 20px;height: 40px;line-height: 40px;font-size: 16px;color: #d8b91a;background: #dd0505;width: 110px;float: left;margin: 10px 10px 10px 20px;outline: none;}
 #logout:hover{background: #b10416;}
-.user-op{width: 500px; float: left; height: 60px; line-height: 60px; margin-left: 400px;}
+.user-op{width: 740px;float: left;height: 60px;line-height: 60px;margin-left: 150px;}
 .login-value-subfix .subfix{width: 20px; float: left; padding: 0; position: absolute; z-index: 100; display: block; margin-left: 10px;}
 .login-value-subfix{width: 35%; float: left; line-height: 30px; height: 30px;}
 .login-value-subfix input{width: 100%;}
@@ -76,11 +76,11 @@ textarea::-webkit-input-placeholder {
     .login-bg{    background-size: 100% 100%;top: 0;bottom: 0;}
     .login-div-inner{width: 100%;padding-top: .8rem;}
     .login-code{margin-top: 4px;}
-    .user-info .user-func{    width: 30%; font-size: .36rem;}
+    .user-info .user-func{    width: 32%; font-size: .1rem;}
     .user-info .user-name{font-size: .36rem;margin-left:.36rem;width: 100%;text-align: center;margin-left: 0;}
     .user-op{width: 100%; clear: left; margin-left: 0;}
-    #logout{position: absolute; top: 0; right: -50px; height: 30px; line-height: 30px; font-size: .26rem;}
-	.login-value input{font-size: .35rem;}
+    #logout{position: absolute; top: 0; right: -5px; height: 30px; line-height: 30px; font-size: .26rem;}
+	.login-value input{font-size: .3rem;}
 	.login-value-subfix .subfix{font-size: .33rem;margin-left: 8px;}
 	.select{top: 11px; left: 10px; width: 1.6rem; background-position: 1.4rem .25rem; height: .6rem; line-height: .6rem;}
 	.select select{width: 1.4rem; height: .6rem; text-indent: .4rem;}

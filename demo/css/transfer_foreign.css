@@ -23,7 +23,7 @@ input{background: transparent;}
  	height: 36px;
  	cursor: pointer;
  	width: 158px;
- 	text-indent: 33px;
+ 	text-indent: 18px;
  	text-align: center;
 	-moz-appearance:none;
 	-webkit-appearance:none;
@@ -60,11 +60,11 @@ input{background: transparent;}
 	background-color: #88000b;border-radius: 20px;
 }
 .pages{height: 40px;line-height: 40px;color: #4f0000;font-size: 21px;margin-top: 100px;}
-.prev,.next{width: 125px;height: 40px;font-size: 21px;color: #fff;line-height: 36px;}
-.prev{margin-right: 16px;}
-.inputPage{width: 75px;height: 40px;text-align: center;color: #fff;font-size: 21px;line-height: 36px;display: inline-block;margin:0 10px 0 10px;}
-.inputPage input{color: #fff;font-size: 21px;width: 75px;height: 38px;text-align: center;}
-.inputPage1{margin:0 30px 0 0;cursor: pointer;}
+.prev,.next{width: 125px;height: 40px;font-size: 18px;color: #fff;line-height: 36px;}
+.prev{margin-right: 14px;}
+.inputPage{width: 75px;height: 40px;text-align: center;color: #fff;font-size: 18px;line-height: 36px;display: inline-block;margin:0 10px 0 10px;}
+.inputPage input{color: #fff;font-size: 18px;width: 75px;height: 38px;text-align: center;}
+.inputPage1{cursor: pointer;}
 
 
 .jedateblue .daybox .arthead{background: #ca3131;}
@@ -84,20 +84,20 @@ input{background: transparent;}
 .item_left{width: 240px;background: #800000;float: left;}
 .item_right{width: 886px;float: left;color: #fff;font-size: 21px;}
 .item_title{height: 71px;text-align: center;font-size: 21px;color: #fff;line-height: 71px;}
-.text_fl{font-size: 21px;color: #fff;margin:0 20px;line-height: 70px;}
-.inputPage2{width: 139px;height: 36px;}
+.text_fl{font-size: 18px;color: #fff;margin:0 10px;line-height: 70px;}
+.inputPage2{width: 120px;height: 36px;}
 .select1{margin:15px 0 0 20px;}
-.transfer_money {line-height: 71px;}
+.transfer_money {line-height: 71px;font-size: 18px;}
 .transfer_table{border-collapse:collapse;}
 .transfer_table td{font-size: 17px;padding: 17px 0;}
 .transfer_table td:first-child{width: 380px;padding: 0 30px 0 43px;box-sizing: border-box;}
 .transfer_table td:last-child{width: 250px;}
 .transfer_table td:nth-child(2){width: 252px;color: #fff;font-size: 17px;line-height: 37px;}
-.tranform_btn{width: 165px;height: 37px;background: url(../img/tranform.png) no-repeat;background-size: 100% auto;cursor: pointer;}
-.tranform_btn1{width: 165px;height: 37px;background: url(../img/tranform1.png) no-repeat;background-size: 100% auto;cursor: pointer;}
+.tranform_btn{width: 100%;height: 37px;background: url(../img/tranform.png) no-repeat;background-size: 100% auto;cursor: pointer;}
+.tranform_btn1{width: 100%;height: 37px;background: url(../img/tranform1.png) no-repeat;background-size: 100% auto;cursor: pointer;}
 .item_title1{min-height: 500px;box-sizing: border-box;line-height: 500px;}
 .contaner{margin-top: 25px;}
-.query-tranfser{width: 80px;height: 40px;font-size: 21px;color: #fff;text-align: center;margin: 15px 10px 0 20px;}
+.query-tranfser{width: 80px;height: 40px;font-size: 18px;color: #fff;text-align: center;margin: 15px 10px 0 20px;}
 *{font-family: "微软雅黑",'Kanit',Tahoma,Verdana, Helvetica, sans-serif;}
 .tranform_btn1,.tranform_btn{text-align: center; line-height: 37px; font-size: 15px; color: #be7900; font-weight: bold;background: url(img/zhuanzhangbak.png) no-repeat;background-size: 100% auto;}
 .page-name{color: #e2aa19; display: block; font-size: 24px; width: 98px; float: left; margin-top: 50px; text-align: center; height: 23px; line-height: 23px; font-weight: bold;}
