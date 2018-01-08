@@ -93,12 +93,12 @@ input{background: transparent;}
 .transfer_table td:first-child{width: 380px;padding: 0 30px 0 43px;box-sizing: border-box;}
 .transfer_table td:last-child{width: 250px;}
 .transfer_table td:nth-child(2){width: 252px;color: #fff;font-size: 17px;line-height: 37px;}
-.tranform_btn{width: 165px;height: 37px;background: url(../img/tranform.png) no-repeat;background-size: 100% auto;cursor: pointer;}
-.tranform_btn1{width: 165px;height: 37px;background: url(../img/tranform1.png) no-repeat;background-size: 100% auto;cursor: pointer;}
+.tranform_btn{width: 165px;height: 37px;background: url(../img/zhuanzhangbak.png) no-repeat;background-size: 100% auto;cursor: pointer;}
+.tranform_btn1{width: 165px;height: 37px;background: url(../img/zhuanzhangbak.png) no-repeat;background-size: 100% auto;cursor: pointer;}
 .item_title1{min-height: 500px;box-sizing: border-box;line-height: 500px;}
 .contaner{margin-top: 25px;}
 .query-tranfser{width: 80px;height: 40px;font-size: 21px;color: #fff;text-align: center;margin: 15px 10px 0 20px;}
 *{font-family: "微软雅黑",'Kanit',Tahoma,Verdana, Helvetica, sans-serif;}
-.tranform_btn1,.tranform_btn{text-align: center; line-height: 37px; font-size: 15px; color: #be7900; font-weight: bold;background: url(img/zhuanzhangbak.png) no-repeat;background-size: 100% auto;}
+.tranform_btn1,.tranform_btn{text-align: center; line-height: 37px; font-size: 15px; color: #be7900; font-weight: bold;background: url(../img/zhuanzhangbak.png) no-repeat;background-size: 100% auto;}
 .page-name{color: #e2aa19; display: block; font-size: 24px; width: 98px; float: left; margin-top: 50px; text-align: center; height: 23px; line-height: 23px; font-weight: bold;}
 .lan{margin-top: 40px;}
