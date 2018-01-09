@@ -39,6 +39,10 @@
 				<button type="button" id="logout" onclick="logoutFunc();">退出</button>				
 			</div>
 		</div>
+		<!--登录，已经登录后隐藏-->
+		<div class="">
+			<button type="button" id="login" onclick="startPlay();">登录</button>	
+		</div>		
 		<!--选择语言-->
 		<div class="select fl shaow">
 			<select>
@@ -200,7 +204,9 @@
 				
 				$(".login-wrapper").hide();
 				$(".user-info").show();
-				isLogin = true;				
+				isLogin = true;	
+				//登录后隐藏登录按钮
+				$("#login").hide();
 			},3000)
 		}
 	};
@@ -211,6 +217,8 @@
 	var logoutFunc = function(){
 		isLogin = false;
 		$(".user-info").hide();		
+		//退出后显示登录按钮
+		$("#login").show();
 	};
 	/**
 	 * 关闭登录窗口
