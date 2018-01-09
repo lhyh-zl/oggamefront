@@ -2,6 +2,7 @@
 body{background: #070000 url('../img/recordBg.jpg') no-repeat;background-size: 100% auto;padding-bottom: 38px;}
 .fl{float: left;}
 .fr{float: right;}
+/*version - 1515468197622*/
 button{cursor: pointer;}
 button,input,select,option{outline: none;border:none;}
 input{background: transparent;}
