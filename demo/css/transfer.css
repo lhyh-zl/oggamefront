@@ -1,4 +1,4 @@
-/*version - 1515468197622*/
+/*version - 1515504449181*/
 *{margin:0;padding:0;font-family: "微软雅黑";}
 body{background: #070000 url('../img/recordBg.jpg') no-repeat;background-size: 100% auto;padding-bottom: 38px;}
 .fl{float: left;}
@@ -103,3 +103,6 @@ input{background: transparent;}
 .tranform_btn1,.tranform_btn{text-align: center; line-height: 37px; font-size: 15px; color: #be7900; font-weight: bold;background: url(../img/zhuanzhangbak.png) no-repeat;background-size: 100% auto;}
 .page-name{color: #e2aa19; display: block; font-size: 24px; width: 98px; float: left; margin-top: 50px; text-align: center; height: 23px; line-height: 23px; font-weight: bold;}
 .lan{margin-top: 40px;}
+.bread-crumb-avigation{float: left; margin-top: 40px; margin-left: 400px; height: 40px; line-height: 40px; font-size: 24px; font-weight: bold; color: #e2aa19;}
+.goto-main{cursor: pointer; margin-right: 10px;}
+.cur-page{color: #797979;margin-left: 10px;}
