@@ -10,6 +10,11 @@
 		<div class="header">
 			<img src="img/logo1.png" alt="" class="logo1">
 			<span class="page-name">平台转账</span>
+			<div class="bread-crumb-avigation">
+				<a class="goto-main" onclick="goHome();">主页</a>
+				>
+				<a class="cur-page">平台转账</a>
+			</div>			
 			<div class="select lan fr shaow">
 				<select>
 					<option value="" class="choose-lan-op">中文</option>
@@ -74,4 +79,12 @@
 		</div>
 	</div>
 </body>
+<script>
+	/**
+	 * 回到主页
+	 */
+	var goHome = function(){
+		window.location.href = "index.html"
+	};
+</script>
 </html>
