@@ -37,7 +37,7 @@
 	 * 引导页进度条
 	 * 进度条到100%时跳转首页index.html
 	 */
-	$(function() {
+	window.onload = function(){
 		var interval = setInterval(increment, 100);
 		var current = 0;
 		function increment() {
@@ -54,8 +54,7 @@
 			clearInterval(interval);
 		}).mouseout(function() {
 			interval = setInterval(increment, 100);
-		});
-	
-	});
+		});		
+	}
 </script>
 </body></html>
