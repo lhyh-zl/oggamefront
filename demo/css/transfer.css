@@ -1,11 +1,14 @@
-/*version - 1515504449181*/
-*{margin:0;padding:0;font-family: "微软雅黑";}
+/*version - 1515858920794*/
+*{margin:0;padding:0;font-family: "微软雅黑";font-size: 16px;}
 body{background: #070000 url('../img/recordBg.jpg') no-repeat;background-size: 100% auto;padding-bottom: 38px;}
 .fl{float: left;}
 .fr{float: right;}
 button{cursor: pointer;}
 button,input,select,option{outline: none;border:none;}
 input{background: transparent;}
+
+
+.icon-down-trangle:before { content: "\e600"; }
 .main{width: 1129px;margin:0 auto;}
 .header{height: 171px;box-sizing:border-box;padding-top: 38px; }
 .logo1{width: 171px;float: left;margin-right: 40px;}
@@ -106,3 +109,7 @@ input{background: transparent;}
 .bread-crumb-avigation{float: left; margin-top: 40px; margin-left: 400px; height: 40px; line-height: 40px; font-size: 24px; font-weight: bold; color: #e2aa19;}
 .goto-main{cursor: pointer; margin-right: 10px;}
 .cur-page{color: #797979;margin-left: 10px;}
+#pc_html{display: block;}
+#mobile_html{display:none ;}
+
+
