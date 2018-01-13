@@ -2,11 +2,24 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<title>平台转账</title>
-	<link rel="stylesheet" type="text/css" href="css/transfer.css">
+	<script type="text/javascript" src="js/fontSize.js"></script>
+	<script type="text/javascript" src="js/jquery-2.1.0.js"></script>
+	<!-- <link rel="stylesheet" type="text/css" href="css/transfer.css"> -->
+	<!-- 根据宽度判断引用手机样式还是电脑样式 -->
+	<script type="text/javascript">
+		if (screen.width >750){
+           document.write('<link rel=stylesheet type="text/css" href="css/transfer.css">');
+        }else {
+        	document.write('<link rel=stylesheet type="text/css" href="css/mobile.css">');
+        }
+	</script>
+	
 </head>
-<body>
-	<div class="main">
+<body class="tranfer_mobile">
+<!-- 电脑端 -->
+	<div class="main" id="pc_html">
 		<div class="header">
 			<img src="img/logo1.png" alt="" class="logo1">
 			<span class="page-name">平台转账</span>
@@ -78,6 +91,96 @@
 
 		</div>
 	</div>
+<!-- 电脑端end -->
+
+
+<!-- 手机端 -->
+	<div id="mobile_html">
+		<!-- 头部 -->
+		<div class="header transfer_header">
+			<span class="header_back" onclick="goHome();">
+				<i class="icon iconfont icon-iconfontfanhui"></i>
+			     钱包转账
+			</span>
+			<img src="img/logo1.png" alt="" class="mobile_logo">
+			<i class="icon iconfont icon-sanhengxian"></i>
+		</div>
+	   <!-- 头部 end-->
+
+	   <!-- 选择语言 弹窗-->
+		<div class="mask_shdow" id="langulage_mask">
+	    	<div class="mask_model"></div>
+	    	<div class="langulage_content">
+	    	    <ul>
+	    	    	<li>中文</li>
+	    	    	<li>English</li>
+	    	    	<li>ภาษาไทย</li>
+	    	    	<li>ພາສາລາວ</li>
+	    	    </ul>
+	    	</div>
+	    </div>
+	   <!-- 选择语言 -->
+
+	    <!-- 主内容-->
+	   <div  class="mobile_content">
+	   	    <div class="money_title">我的钱包额度</div>
+	   	    <div class="money_num">
+	   	    	2000
+	   	    </div>
+	   	    <div class="money_btns">
+	   	    	<button type="button" class="all">全部转回我的账户</button>
+	   	    </div>
+	   	    <div class="money_btns money_btns2">
+	   	    	<button type="button" class="money_btn">钱包转账</button>
+	   	    </div>
+	   	    <table  class="game_list">
+	   	    	<tr>
+	   	    		<td>电子游戏</td>
+	   	    		<td>9000</td>
+	   	    		<td>
+	   	    			<button type="button">转至我的钱包</button>
+	   	    		</td>
+	   	    	</tr>
+	   	    	<tr>
+	   	    		<td>电子游戏</td>
+	   	    		<td>9000</td>
+	   	    		<td>
+	   	    			<button type="button">转至我的钱包</button>
+	   	    		</td>
+	   	    	</tr>
+	   	    	<tr>
+	   	    		<td>电子游戏</td>
+	   	    		<td>9000</td>
+	   	    		<td>
+	   	    			<button type="button">转至我的钱包</button>
+	   	    		</td>
+	   	    	</tr>	
+	   	    </table>
+	   </div>
+	    <!-- 主内容end-->
+
+	    <!-- 弹窗 -->
+	    <div class="mask_shdow" id="chose_money">
+	    	<div class="mask_model"></div>
+	    	<div class="mask_content">
+	    	    <span class="close_mask"></span>
+	    		<select name="" class="select_money shaow">
+	    			<option value="">我的钱包</option>
+	    			<option value="">钱包一</option>
+	    		</select>
+	    		<select name="" class="select_money shaow">
+	    			<option value="">选择</option>
+	    			<option value="">选择一</option>
+	    		</select>
+	    		<input type="text" value="2000" class="money_input">
+	    		<button type="button" class="confirm_money">确认</button>
+	    	</div>
+	    </div>
+	    <!-- 弹窗 end-->
+
+	</div>
+
+<!-- 手机端end -->
 </body>
 <script>
 	/**
@@ -86,5 +189,32 @@
 	var goHome = function(){
 		window.location.href = "index.html"
 	};
+	// 弹窗
+	$(function(){
+		$(".money_btn").click(function() {
+			$("#chose_money").show();
+		});
+		$("#chose_money .close_mask,#chose_money .mask_model").click(function() {
+			$("#chose_money").hide();
+		});
+        var flag=false;
+		$(".icon-sanhengxian,#langulage_mask .mask_model,.langulage_content li").click(function() {
+			if(flag){
+				flag=false;
+				$("#langulage_mask").fadeOut();
+				$(".langulage_content").animate({
+	                top:'-3.4rem'
+			    }, 500);
+
+			}else{
+				$("#langulage_mask").fadeIn();
+				$(".langulage_content").animate({
+	                top:'.88rem'
+			    }, 500);
+			    flag=true;
+			}
+		});
+	})
+	
 </script>
 </html>

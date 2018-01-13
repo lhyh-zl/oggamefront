@@ -2,14 +2,31 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<title>投注记录</title>
 	<script type="text/javascript" src="js/jquery-2.1.0.js"></script>
 	<script type="text/javascript" src="js/jquery.jedate.min.js"></script>
+	<script type="text/javascript" src="js/fontSize.js"></script>
 	<link rel="stylesheet" type="text/css" href="css/jedate.css">
-	<link rel="stylesheet" type="text/css" href="css/transfer.css">
+	
+	<link rel="stylesheet" href="css/mui.picker.min.css">
+	<script type="text/javascript" src="js/mui.js"></script>
+	<script type="text/javascript" src="js/mui.picker.js"></script>
+	<script type="text/javascript" src="js/mui.dtpicker.js"></script>
+	<!-- <link rel="stylesheet" type="text/css" href="css/transfer.css"> -->
+	<!-- 根据宽度判断引用手机样式还是电脑样式 -->
+	<script type="text/javascript">
+		if (screen.width >750){
+           document.write('<link rel=stylesheet type="text/css" href="css/transfer.css">');
+        }else {
+        	document.write('<link rel="stylesheet" type="text/css" href="css/mui.min.css">');
+        	document.write('<link rel=stylesheet type="text/css" href="css/mobile.css">');
+        }
+	</script>
 </head>
 <body>
-	<div class="main">
+<!-- 电脑端 -->
+	<div class="main" id="pc_html">
 		<div class="header">
 			<img src="img/logo1.png" alt="" class="logo1">
 			<img src="img/touzhu.png" alt="" class="text">
@@ -108,11 +125,76 @@
 		  <button type="button" class="next fr shaow">下一页</button>
 		  <button type="button" class="prev fr shaow">上一页</button>
 		</div>
-		
 	</div>
+<!-- 电脑端 end-->
+
+<!-- 手机端 -->
+	<div id="mobile_html">
+	   <!-- 头部 -->
+		<div class="header">
+			<span class="header_back">
+				<i class="icon iconfont icon-iconfontfanhui"></i>
+			     投注记录
+			</span>
+			<img src="img/logo1.png" alt="" class="mobile_logo">
+			<i class="icon iconfont icon-sanhengxian"></i>
+		</div>
+	   <!-- 头部 end-->
+        <!-- 主内容-->
+		<div class="mobile_content">
+			<div class="select_div">
+				<select id="" class="fl">
+					<option value="" style="display:none;">选择产品</option>
+					<option value="">产品一</option>
+				</select>
+				<div class="fr">
+					<span id="m_startTime">2018.1.11</span>
+					-
+					<span id="m_endTime">2018.1.11</span>
+				</div>
+			</div>
+           <button type="button" class="query">查询</button>
+		    <div class="card">
+		    	<ul>
+		    		<li>AG</li>
+		    		<li>游戏转入<span>2000</span></li>
+		    		<li>游戏转出<span>2000</span></li>
+		    		<li>交易时间<span>2018.9.10</span></li>
+		    	</ul>
+		    </div>
+		    <div class="card">
+		    	<ul>
+		    		<li>AG</li>
+		    		<li>游戏转入<span>2000</span></li>
+		    		<li>游戏转出<span>2000</span></li>
+		    		<li>交易时间<span>2018.9.10</span></li>
+		    	</ul>
+		    </div>
+		    <div class="card">
+		    	<ul>
+		    		<li>AG</li>
+		    		<li>游戏转入<span>2000</span></li>
+		    		<li>游戏转出<span>2000</span></li>
+		    		<li>交易时间<span>2018.9.10</span></li>
+		    	</ul>
+		    </div>
+		    <div class="card">
+		    	<ul>
+		    		<li>AG</li>
+		    		<li>游戏转入<span>2000</span></li>
+		    		<li>游戏转出<span>2000</span></li>
+		    		<li>交易时间<span>2018.9.10</span></li>
+		    	</ul>
+		    </div>
+		</div>
+        <!-- 主内容 end-->
+
+
+	</div>
+<!-- 手机端 end-->
+
 	<script type="text/javascript">
 	$(function(){
-
 		$("#startTime").jeDate({
 	        format: "YYYY-MM-DD",
 	        isinitVal: true,
@@ -181,6 +263,21 @@
 	    	var sum=$.timeStampDate(timer-s,'YYYY-MM-DD');
 	        $("#endTime").html(sum);
 	    	 
+	    });
+
+
+
+	    // 手机端的选择时间
+         
+	    $("#m_startTime,#m_endTime").click(function() {
+	    	var that=this;
+	    	 var optionsJson = '{"type":"date"}';
+			var options = JSON.parse(optionsJson);
+			var picker = new mui.DtPicker(options);
+			picker.show(function(rs) {
+				$(that).html(rs.y.value+"."+rs.m.value+"."+rs.d.value);
+				picker.dispose();
+			});
 	    });
 	});
 		
