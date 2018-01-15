@@ -1,4 +1,4 @@
-/*version - 1515907343377*/
+/*version - 1516028959597*/
 *{margin:0;padding:0;}
 html{min-width:1186px;}
 li{list-style: none;}
@@ -65,7 +65,7 @@ textarea::-webkit-input-placeholder {
 #login:hover{background: #b10416;}
 /*移动端功能*/
 .login-func-mobile{display: none; position: absolute; top: 11px; right: 10px; height: 30px; line-height: 19px; font-size: .3rem;}
-.login-func-mobile img{width: 80%;height: 26px;}
+.login-func-mobile img{width: 80%;height: 20px;}
 /* 遮罩层 */
 .mask_shdow{width: 100%;height: 100%;top: 0;left: 0;z-index: 99;position: fixed;display: none;}
 .mask_model{width: 100%;height: 100%;top: 0;left: 0;z-index: 100;position: absolute;background: rgba(0, 0, 0, 0.6);}
@@ -73,6 +73,10 @@ textarea::-webkit-input-placeholder {
 .langulage_content{position: absolute; top:-3.4rem; left: 0;width: 100%;z-index: 101;background: #600000;padding: .1rem 0;}
 .langulage_content li{height: .8rem;line-height:.8rem;color: #fff;text-indent: .4rem;font-size: .3rem;}
 .modify-wrapper{display: none;z-index: 5;}
+.user-point{display:none;max-width: 400px; width: 400px; background: rgba(178, 3, 23,.8); border-radius: 50px; height: 60px; margin: 20px auto 0 auto; font-size: 18px; color: white; line-height: 60px;}
+.refresh-btn{height: 40px;margin: 14px 0; cursor: pointer;}
+.user-point-out{ width: 70%; float: left; margin-left: 10%;}
+.user-point-inner{ font-size: 26px; float: right; margin-right: 10%;font-weight: bold;}
 @media screen and (max-width: 750px) {
 	html{max-width:750px;min-width: 1px;}
 	body{padding-bottom: 1.45rem;}
@@ -103,4 +107,7 @@ textarea::-webkit-input-placeholder {
 	.shark{width: 100%; position: static;}
 	.shark a{width: 46% !important; margin-left: 4% !important;}
 	#login{position: absolute; top: 0; right: -40px; height: 30px; line-height: 30px; font-size: .26rem;width:1.6rem}
+	.user-info{width: 80%;}
+	.user-point{width: 80%;font-size: .36rem;}
+	.user-point-inner{font-size: .36rem;}	
 }
