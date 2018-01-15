@@ -47,7 +47,7 @@ input::-webkit-input-placeholder ,
 textarea::-webkit-input-placeholder {
   	color: #7e000c;
 } 
-.user-info{display:none;width: 90%;margin-left: 5%;background: rgba(178, 3, 23,.8);border-radius: 50px;height: 60px;margin-top: 50px;}
+.user-info{display:none;width: 90%;max-width: 1214px;width: 1214px;background: rgba(178, 3, 23,.8);border-radius: 50px;height: 60px;margin: 50px auto 0 auto;} 
 .user-info .user-name{ display: block; font-size: 18px; width: 200px; height: 60px; line-height: 60px; margin-left: 80px; color: #ffffff; float: left; }
 .user-info .user-func{display: block; font-size: 18px; width: 100px; height: 60px; line-height: 60px; color: #d8b91a; float: left; text-align: center;}
 .user-info .break-line{ display: block; font-size: 18px; width: 5px; height: 60px; line-height: 60px; color: #d8b91a; float: left; }
