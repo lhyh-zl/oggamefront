@@ -41,6 +41,17 @@
 				<button type="button" id="logout" onclick="logoutFunc();">退出</button>				
 			</div>
 		</div>
+		<!--我的积分开始-->
+		<div class="user-point" onclick="refreshPoint();">
+			<span class="user-point-out">
+				我的积分
+				<span class="user-point-inner">
+					999999999
+				</span>
+			</span>
+			<img class="refresh-btn" src="img/refresh.png">
+		</div>
+		<!--我的积分结束-->
 		<!--登录，已经登录后隐藏-->
 		<div class="">
 			<button type="button" id="login" onclick="startPlay();">登录</button>	
@@ -262,6 +273,7 @@
 				
 				$(".login-wrapper").hide();
 				$(".user-info").show();
+				$(".user-point").show();
 				if (screen.width >750){
 					$(".user-op").show();
 				}else{
@@ -283,6 +295,7 @@
 		$(".user-info").hide();		
 		//退出后显示登录按钮
 		$("#login").show();
+		$(".user-point").hide();
 		$(".user-op").hide();
 		$(".login-func-mobile").hide();
 	};
@@ -370,5 +383,13 @@
 		    flag=true;
 		}
 	});
+	
+	/**
+	 * 刷新积分
+	 */
+	var  refreshPoint = function(){
+		alert("积分已刷新");
+		$(".user-point-inner").html(Math.round(Math.random()*10000))
+	};
 </script>
 </html>
