@@ -1,4 +1,4 @@
-/*version - 1516028959597*/
+/*version - 1516692745248*/
 *{margin:0;padding:0;}
 html{min-width:1186px;}
 li{list-style: none;}
@@ -109,5 +109,7 @@ textarea::-webkit-input-placeholder {
 	#login{position: absolute; top: 0; right: -40px; height: 30px; line-height: 30px; font-size: .26rem;width:1.6rem}
 	.user-info{width: 80%;}
 	.user-point{width: 80%;font-size: .36rem;}
-	.user-point-inner{font-size: .36rem;}	
+	.user-point-inner{font-size: .36rem;}
+	.login-value span{width: 26%;padding-left: 15%;}
+	
 }
