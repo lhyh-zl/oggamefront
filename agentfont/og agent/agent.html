@@ -1,0 +1,1082 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<!-- Meta, title, CSS, favicons, etc. -->
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<title>OG Game</title>
+
+		<!-- Bootstrap -->
+		<link href="css/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+		<!-- Font Awesome -->
+		<link href="css/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+		<!-- NProgress -->
+		<link href="css/nprogress/nprogress.css" rel="stylesheet">
+		<!-- iCheck -->
+		<link href="css/iCheck/skins/flat/green.css" rel="stylesheet">
+
+		<!-- Custom Theme Style -->
+		<link href="css/custom.min.css" rel="stylesheet">
+		<style type="text/css">
+			.panel_toolbox>li { float: right; }
+			.agent-name, .edit-agent, .add-agent { color: #31b0d5 }
+			.enable-agent { color: #5cb85c }
+			.disable-agent { color: #c9302c }
+			.header-name { margin: 0 10px; }
+			@media (max-width: 1200px) .x_title h2 {
+				width: 70% !important;
+			}
+			.tl { text-align: left !important }
+			.tc { text-align: center !important }
+			.required { color: red }
+			.agent-only{display: none;}
+			.vscode{margin-top:-34px;z-index:2;float:right;margin-right: 0;width: 70px;}
+		</style>
+	</head>
+
+	<body class="nav-md">
+		<div class="container body">
+			<div class="main_container">
+				<div class="col-md-3 left_col">
+					<div class="left_col scroll-view">
+						<div class="navbar nav_title" style="border: 0;">
+							<a href="index.html" class="site_title"><i class="fa fa-paw"></i> <span>OG Game</span></a>
+						</div>
+
+						<div class="clearfix"></div>
+
+						<!-- menu profile quick info -->
+						<div class="profile clearfix">
+							<div class="profile_pic">
+								<img src="images/img.jpg" alt="..." class="img-circle profile_img">
+							</div>
+							<div class="profile_info">
+								<span>Welcome,</span>
+								<h2>John Doe</h2>
+							</div>
+						</div>
+						<!-- /menu profile quick info -->
+
+						<br />
+
+						<!-- sidebar menu -->
+						<div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
+							<div class="menu_section">
+								<h3>OG Game</h3>
+								<ul class="nav side-menu">
+									<li>
+										<a><i class="fa fa-users"></i>客户管理<span class="fa fa-chevron-down"></span></a>
+										<ul class="nav child_menu">
+											<li>
+												<a href="agent.html">客户管理</a>
+											</li>
+											<li>
+												<a href="gains_reports.html">输赢</a>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</div>
+							<div class="menu_section">
+								<h3>Live On</h3>
+								<ul class="nav side-menu">
+									<li>
+										<a><i class="fa fa-bug"></i> Additional Pages <span class="fa fa-chevron-down"></span></a>
+										<ul class="nav child_menu">
+											<li>
+												<a href="e_commerce.html">E-commerce</a>
+											</li>
+											<li>
+												<a href="projects.html">Projects</a>
+											</li>
+											<li>
+												<a href="project_detail.html">Project Detail</a>
+											</li>
+											<li>
+												<a href="contacts.html">Contacts</a>
+											</li>
+											<li>
+												<a href="profile.html">Profile</a>
+											</li>
+										</ul>
+									</li>
+									<li>
+										<a><i class="fa fa-windows"></i> Extras <span class="fa fa-chevron-down"></span></a>
+										<ul class="nav child_menu">
+											<li>
+												<a href="page_403.html">403 Error</a>
+											</li>
+											<li>
+												<a href="page_404.html">404 Error</a>
+											</li>
+											<li>
+												<a href="page_500.html">500 Error</a>
+											</li>
+											<li>
+												<a href="plain_page.html">Plain Page</a>
+											</li>
+											<li>
+												<a href="login.html">Login Page</a>
+											</li>
+											<li>
+												<a href="pricing_tables.html">Pricing Tables</a>
+											</li>
+										</ul>
+									</li>
+									<li>
+										<a><i class="fa fa-sitemap"></i> Multilevel Menu <span class="fa fa-chevron-down"></span></a>
+										<ul class="nav child_menu">
+											<li>
+												<a href="#level1_1">Level One</a>
+												<li>
+													<a>Level One<span class="fa fa-chevron-down"></span></a>
+													<ul class="nav child_menu">
+														<li class="sub_menu">
+															<a href="level2.html">Level Two</a>
+														</li>
+														<li>
+															<a href="#level2_1">Level Two</a>
+														</li>
+														<li>
+															<a href="#level2_2">Level Two</a>
+														</li>
+													</ul>
+												</li>
+												<li>
+													<a href="#level1_2">Level One</a>
+												</li>
+										</ul>
+										</li>
+										<li>
+											<a href="javascript:void(0)"><i class="fa fa-laptop"></i> Landing Page <span class="label label-success pull-right">Coming Soon</span></a>
+										</li>
+								</ul>
+							</div>
+
+						</div>
+						<!-- /sidebar menu -->
+
+						<!-- /menu footer buttons -->
+						<div class="sidebar-footer hidden-small">
+							<a data-toggle="tooltip" data-placement="top" title="Settings">
+								<span class="glyphicon glyphicon-cog" aria-hidden="true"></span>
+							</a>
+							<a data-toggle="tooltip" data-placement="top" title="FullScreen">
+								<span class="glyphicon glyphicon-fullscreen" aria-hidden="true"></span>
+							</a>
+							<a data-toggle="tooltip" data-placement="top" title="Lock">
+								<span class="glyphicon glyphicon-eye-close" aria-hidden="true"></span>
+							</a>
+							<a data-toggle="tooltip" data-placement="top" title="Logout" href="login.html">
+								<span class="glyphicon glyphicon-off" aria-hidden="true"></span>
+							</a>
+						</div>
+						<!-- /menu footer buttons -->
+					</div>
+				</div>
+
+				<!-- top navigation -->
+				<div class="top_nav">
+					<div class="nav_menu">
+						<nav>
+							<div class="nav toggle">
+								<a id="menu_toggle"><i class="fa fa-bars"></i></a>
+							</div>
+
+							<ul class="nav navbar-nav navbar-right">
+								<li class="">
+									<a href="javascript:;" class="user-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+										<img src="images/img.jpg" alt="">John Doe
+										<span class=" fa fa-angle-down"></span>
+									</a>
+									<ul class="dropdown-menu dropdown-usermenu pull-right">
+										<li>
+											<a href="javascript:;"> Profile</a>
+										</li>
+										<li>
+											<a href="javascript:;">
+												<span class="badge bg-red pull-right">50%</span>
+												<span>Settings</span>
+											</a>
+										</li>
+										<li>
+											<a href="javascript:;">Help</a>
+										</li>
+										<li>
+											<a href="login.html"><i class="fa fa-sign-out pull-right"></i> Log Out</a>
+										</li>
+									</ul>
+								</li>
+
+								<li role="presentation" class="dropdown">
+									<a href="javascript:;" class="dropdown-toggle info-number" data-toggle="dropdown" aria-expanded="false">
+										<i class="fa fa-envelope-o"></i>
+										<span class="badge bg-green">6</span>
+									</a>
+									<ul id="menu1" class="dropdown-menu list-unstyled msg_list" role="menu">
+										<li>
+											<a>
+												<span class="image">
+													<img src="images/img.jpg" alt="Profile Image" /></span>
+												<span>
+                          						<span>John Smith</span>
+												<span class="time">3 mins ago</span>
+												</span>
+												<span class="message">
+						                          Film festivals used to be do-or-die moments for movie makers. They were where...
+						                        </span>
+											</a>
+										</li>
+										<li>
+											<a>
+												<span class="image">
+													<img src="images/img.jpg" alt="Profile Image" /></span>
+												<span>
+                          						<span>John Smith</span>
+												<span class="time">3 mins ago</span>
+												</span>
+												<span class="message">
+						                          Film festivals used to be do-or-die moments for movie makers. They were where...
+						                        </span>
+											</a>
+										</li>
+										<li>
+											<a>
+												<span class="image">
+													<img src="images/img.jpg" alt="Profile Image" /></span>
+												<span>
+                          						<span>John Smith</span>
+												<span class="time">3 mins ago</span>
+												</span>
+												<span class="message">
+						                          Film festivals used to be do-or-die moments for movie makers. They were where...
+						                        </span>
+											</a>
+										</li>
+										<li>
+											<a>
+												<span class="image">
+													<img src="images/img.jpg" alt="Profile Image" /></span>
+												<span>
+						                          <span>John Smith</span>
+												<span class="time">3 mins ago</span>
+												</span>
+												<span class="message">
+						                          Film festivals used to be do-or-die moments for movie makers. They were where...
+						                        </span>
+											</a>
+										</li>
+										<li>
+											<div class="text-center">
+												<a>
+													<strong>See All Alerts</strong>
+													<i class="fa fa-angle-right"></i>
+												</a>
+											</div>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+				<!-- /top navigation -->
+
+				<!-- page content -->
+				<div class="right_col" role="main">
+					<div class="">
+						<div class="row">
+							<div class="clearfix"></div>
+							<div class="col-md-12 col-sm-12 col-xs-12">
+								<div class="x_panel">
+									<div class="x_title">
+										<h2>当前代理:<a onclick="" class="agent-name header-name">agent</a>/<a class="agent-name header-name" onclick="">agent1</a></h2>
+										<ul class="nav navbar-right panel_toolbox">
+											<li>
+												<a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+											</li>
+										</ul>
+										<div class="col-md-5 col-sm-5 col-xs-12 form-group pull-right top_search">
+											<div class="input-group">
+												<input type="text" class="form-control" placeholder="查找用户">
+												<span class="input-group-btn">
+							                      <button class="btn btn-default" type="button">查找</button>
+							                    </span>
+											</div>
+										</div>
+										<div class="clearfix"></div>
+									</div>
+
+									<div class="x_content">
+										<!--  一级代理开始    -->
+										<div class="table-responsive">
+											<table class="table table-striped jambo_table ">
+												<thead>
+													<tr class="headings">
+														<th class="column-title">代理 </th>
+														<th class="column-title">别名</th>
+														<th class="column-title">级别</th>
+														<th class="column-title">剩余点数</th>
+														<th class="column-title">代理占成</th>
+														<th class="column-title">洗码比</th>
+														<th class="column-title">返点</th>
+														<th class="column-title">状态</th>
+														<th class="column-title">资料</th>
+														<th class="column-title">下级</th>
+														<th class="column-title">开户时间</th>
+														<th class="column-title no-link last"><span class="nobr">最后登入</span></th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr class="even pointer">
+														<td class=" ">
+															<a href="#" class="agent-name">agent</a>
+														</td>
+														<td class=" ">测试</td>
+														<td class=" ">级别</td>
+														<td class=" ">50000</td>
+														<td class=" ">10%</td>
+														<td class=" ">0.8%</td>
+														<td class=" ">15%</td>
+														<td class=" ">
+															<a href="#" class="enable-agent">启用</a>
+														</td>
+														<td class=" ">
+															<a href="#" class="edit-agent" data-toggle="modal" data-target=".edit-agent-modal">编辑</a>
+														</td>
+														<td class=" ">
+															<a href="#" class="add-agent" data-toggle="modal" data-target=".add-level">添加</a>
+														</td>
+														<td class=" ">2017-12-31 11:55:05</td>
+														<td class=" ">2017-12-31 11:55:05</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+										<!--  一级代理结束  -->
+
+										<!--  二级代理结束  -->
+										<div class="table-responsive">
+											<table class="table table-striped jambo_table ">
+												<thead>
+													<tr class="headings">
+														<th class="column-title">代理 </th>
+														<th class="column-title">别名</th>
+														<th class="column-title">级别</th>
+														<th class="column-title">剩余点数</th>
+														<th class="column-title">代理占成</th>
+														<th class="column-title">洗码比</th>
+														<th class="column-title">返点</th>
+														<th class="column-title">状态</th>
+														<th class="column-title">资料</th>
+														<th class="column-title">下级</th>
+														<th class="column-title">开户时间</th>
+														<th class="column-title no-link last"><span class="nobr">最后登入</span></th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr class="even pointer">
+														<td class=" ">
+															<a href="#" class="agent-name">agent1</a>
+														</td>
+														<td class=" ">测试</td>
+														<td class=" ">级别</td>
+														<td class=" ">50000</td>
+														<td class=" ">10%</td>
+														<td class=" ">0.8%</td>
+														<td class=" ">15%</td>
+														<td class=" ">
+															<a href="#" class="disable-agent">禁用</a>
+														</td>
+														<td class=" ">
+															<a href="#" class="edit-agent" data-toggle="modal" data-target=".edit-agent-modal">编辑</a>
+														</td>
+														<td class=" ">
+															<a href="#" class="add-agent" data-toggle="modal" data-target=".add-level">添加</a>
+														</td>
+														<td class=" ">2017-12-31 11:55:05</td>
+														<td class=" ">2017-12-31 11:55:05</td>
+													</tr>
+													<tr class="even pointer">
+														<td class=" ">
+															<a href="#" class="agent-name">agent2</a>
+														</td>
+														<td class=" ">测试</td>
+														<td class=" ">级别</td>
+														<td class=" ">50000</td>
+														<td class=" ">10%</td>
+														<td class=" ">0.8%</td>
+														<td class=" ">15%</td>
+														<td class=" ">
+															<a href="#" class="disable-agent">禁用</a>
+														</td>
+														<td class=" ">
+															<a href="#" class="edit-agent" data-toggle="modal" data-target=".edit-agent-modal">编辑</a>
+														</td>
+														<td class=" ">
+															<a href="#" class="add-agent" data-toggle="modal" data-target=".add-level">添加</a>
+														</td>
+														<td class=" ">2017-12-31 11:55:05</td>
+														<td class=" ">2017-12-31 11:55:05</td>
+													</tr>
+													<tr class="even pointer">
+														<td class=" ">
+															<a href="#" class="agent-name">agent3</a>
+														</td>
+														<td class=" ">测试</td>
+														<td class=" ">级别</td>
+														<td class=" ">50000</td>
+														<td class=" ">10%</td>
+														<td class=" ">0.8%</td>
+														<td class=" ">15%</td>
+														<td class=" ">
+															<a href="#" class="enable-agent">启用</a>
+														</td>
+														<td class=" ">
+															<a href="#" class="edit-agent" data-toggle="modal" data-target=".edit-agent-modal">编辑</a>
+														</td>
+														<td class=" ">
+															<a href="#" class="add-agent" data-toggle="modal" data-target=".add-level">添加</a>
+														</td>
+														<td class=" ">2017-12-31 11:55:05</td>
+														<td class=" ">2017-12-31 11:55:05</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+										<!--  二级代理结束  -->
+
+										<!--  用户列表开始  -->
+										<div class="table-responsive">
+											<table class="table table-striped jambo_table ">
+												<thead>
+													<tr class="headings">
+														<th class="column-title">用户 </th>
+														<th class="column-title">别名</th>
+														<th class="column-title">级别</th>
+														<th class="column-title">剩余点数</th>
+														<th class="column-title">状态</th>
+														<th class="column-title">资料</th>
+														<th class="column-title">加点</th>
+														<th class="column-title">减点</th>
+														<th class="column-title">开户时间</th>
+														<th class="column-title no-link last"><span class="nobr">最后登入</span></th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr class="even pointer">
+														<td class=" ">user1</td>
+														<td class=" ">小明</td>
+														<td class=" ">会员</td>
+														<td class=" ">50000<button class="btn btn-info btn-xs">刷新</button></td>
+														<td class=" ">
+															<a href="#" class="enable-agent">启用</a>
+														</td>
+														<td class=" ">
+															<a href="#" class="edit-agent" data-toggle="modal" data-target=".edit-user-modal">编辑</a>
+														</td>
+														<td class=" "><button type="button" class="btn btn-primary btn-xs" data-toggle="modal" data-target=".add-point">加点</button></td>
+														<td class=" "><button type="button" class="btn btn-danger btn-xs" data-toggle="modal" data-target=".minus-point">减点</button></td>
+														<td class=" ">2017-12-31 11:55:05</td>
+														<td class=" ">2017-12-31 11:55:05</td>
+													</tr>
+													<tr class="even pointer">
+														<td class=" ">user1</td>
+														<td class=" ">小明</td>
+														<td class=" ">会员</td>
+														<td class=" ">50000<button class="btn btn-info btn-xs">刷新</button></td>
+														<td class=" ">
+															<a href="#" class="enable-agent">启用</a>
+														</td>
+														<td class=" ">
+															<a href="#" class="edit-agent" data-toggle="modal" data-target=".edit-user-modal">编辑</a>
+														</td>
+														<td class=" "><button type="button" class="btn btn-primary btn-xs" data-toggle="modal" data-target=".add-point">加点</button></td>
+														<td class=" "><button type="button" class="btn btn-danger btn-xs" data-toggle="modal" data-target=".minus-point">减点</button></td>
+														<td class=" ">2017-12-31 11:55:05</td>
+														<td class=" ">2017-12-31 11:55:05</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+
+										<!--  用户列表结束  -->
+
+										<!--  加点模态框开始  -->
+										<div class="modal fade bs-example-modal-sm add-point" tabindex="-1" role="dialog" aria-hidden="true">
+											<div class="modal-dialog modal-sm">
+												<div class="modal-content">
+
+													<div class="modal-header">
+														<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+															<span aria-hidden="true">×</span>
+	                          							</button>
+														<h2 class="modal-title" id="myModalLabel2">存入点数:<span>user1</span></h2>
+													</div>
+													<div class="modal-body">
+														<form class="form-horizontal form-label-left">
+															<div class="form-group">
+																<label class="tl control-label col-md-4 col-sm-4 col-xs-4">会员：</label>
+																<label class="control-label col-md-8 col-sm-8 col-xs-8 tc">user1</label>
+															</div>
+															<div class="form-group">
+																<label class="tl control-label col-md-4 col-sm-4 col-xs-4">剩余点数：</label>
+																<label class="control-label col-md-8 col-sm-8 col-xs-8 tc">0.00</label>
+															</div>
+															<div class="form-group">
+																<div class="col-md-12 col-sm-12 col-xs-12">
+																	<div class="col-md-7 col-sm-7 col-xs-12">
+																		<input type="number" class="form-control" placeholder="输入存入点数">
+																	</div>
+																	<label class="control-label col-md-1 col-sm-1 col-xs-1">/</label>
+																	<div class="col-md-4 col-sm-4 col-xs-6">
+																		<label class="control-label">5000.0</label>
+																	</div>
+																</div>
+															</div>
+															<div class="form-group">
+																<label class="tl control-label col-md-3 col-sm-3 col-xs-12">备注：</label>
+																<div class="col-md-9 col-sm-9 col-xs-12">
+																	<textarea class="form-control" rows="3" placeholder="备注"></textarea>
+																</div>
+															</div>
+														</form>
+													</div>
+													<div class="modal-footer">
+														<button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+														<button type="button" class="btn btn-primary">确定</button>
+													</div>
+												</div>
+											</div>
+										</div>
+										<!--  加点模态框结束  -->
+										<!--  减点模态框开始  -->
+										<div class="modal fade bs-example-modal-sm minus-point" tabindex="-1" role="dialog" aria-hidden="true">
+											<div class="modal-dialog modal-sm">
+												<div class="modal-content">
+
+													<div class="modal-header">
+														<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+															<span aria-hidden="true">×</span>
+	                          							</button>
+														<h2 class="modal-title" id="myModalLabel2">提出点数:<span>user1</span></h2>
+													</div>
+													<div class="modal-body">
+														<form class="form-horizontal form-label-left">
+															<div class="form-group">
+																<label class="tl control-label col-md-4 col-sm-4 col-xs-4">会员：</label>
+																<label class="control-label col-md-8 col-sm-8 col-xs-8 tc">user1</label>
+															</div>
+															<div class="form-group">
+																<label class="tl control-label col-md-4 col-sm-4 col-xs-4">剩余点数：</label>
+																<label class="control-label col-md-8 col-sm-8 col-xs-8 tc">0.00</label>
+															</div>
+															<div class="form-group">
+																<div class="col-md-12 col-sm-12 col-xs-12">
+																	<div class="col-md-7 col-sm-7 col-xs-12">
+																		<input type="number" class="form-control" placeholder="输入提出点数">
+																	</div>
+																	<label class="control-label col-md-1 col-sm-1 col-xs-1">/</label>
+																	<div class="col-md-4 col-sm-4 col-xs-6">
+																		<label class="control-label">5000.0</label>
+																	</div>
+																</div>
+															</div>
+															<div class="form-group">
+																<label class="tl control-label col-md-3 col-sm-3 col-xs-12">备注：</label>
+																<div class="col-md-9 col-sm-9 col-xs-12">
+																	<textarea class="form-control" rows="3" placeholder="备注"></textarea>
+																</div>
+															</div>
+														</form>
+													</div>
+													<div class="modal-footer">
+														<button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+														<button type="button" class="btn btn-primary">确定</button>
+													</div>
+												</div>
+											</div>
+										</div>
+										<!--  减点模态框结束  -->
+										<!--  添加下线/用户模态框开始  -->
+										<div class="modal fade bs-example-modal-sm add-level" tabindex="-1" role="dialog" aria-hidden="true">
+											<div class="modal-dialog">
+												<div class="modal-content">
+													<div class="modal-header">
+														<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+															<span aria-hidden="true">×</span>
+	                          							</button>
+														<h2 class="modal-title" id="myModalLabel2">添加下线</h2>
+													</div>
+													<div class="modal-body">
+														<form class="form-horizontal form-label-left">
+															<div class="form-group ">
+																<label class="tl control-label col-md-4 col-sm-4 col-xs-12">选择类型：</label>
+																<div class="radio col-md-4 col-sm-4 col-xs-6">
+																	<label style="width:100%;">
+																	  <input type="radio" value="option1" id="daili" name="optionsRadios"  onclick="toggleContent('agent-only','user-only')"> 代理
+																	</label>
+																</div>
+																<div class="radio col-md-4 col-sm-4 col-xs-6">
+																	<label style="width:100%;">
+																  <input type="radio" value="option2" id="user" name="optionsRadios" checked onclick="toggleContent('user-only','agent-only')"> 用户
+																</label>
+																</div>
+															</div>
+															<!--添加用户dom开始-->
+															<div class="form-group user-only">
+																<label class="tl control-label col-md-3 col-sm-3 col-xs-12">上级代理：</label>
+																<div class="col-md-9 col-sm-9 col-xs-12">
+																	<input type="text" class="form-control" placeholder="">
+																</div>
+															</div>
+															<div class="form-group user-only">
+																<label class="tl control-label col-md-3 col-sm-3 col-xs-12">用户名：<span class="required">*</span></label>
+																<div class="col-md-9 col-sm-9 col-xs-12">
+																	<input type="text" class="form-control" placeholder="">
+																</div>
+															</div>
+															<div class="form-group user-only">
+																<label class="tl control-label col-md-3 col-sm-3 col-xs-12">密码：<span class="required">*</span></label>
+																<div class="col-md-9 col-sm-9 col-xs-12">
+																	<input type="text" class="form-control" placeholder="">
+																</div>
+															</div>
+															<div class="form-group user-only">
+																<label class="tl control-label col-md-3 col-sm-3 col-xs-12">别名：</label>
+																<div class="col-md-9 col-sm-9 col-xs-12">
+																	<input type="text" class="form-control" placeholder="">
+																</div>
+															</div>
+															<div class="form-group user-only">
+																<label class="tl control-label col-md-3 col-sm-3 col-xs-12">电话：</label>
+																<div class="col-md-9 col-sm-9 col-xs-12">
+																	<input type="text" class="form-control" placeholder="">
+																</div>
+															</div>
+															<div class="form-group user-only">
+																<label class="tl control-label col-md-3 col-sm-3 col-xs-12">邮箱：</label>
+																<div class="col-md-9 col-sm-9 col-xs-12">
+																	<input type="text" class="form-control" placeholder="">
+																</div>
+															</div>
+															<div class="form-group user-only">
+																<label class="tl control-label col-md-3 col-sm-3 col-xs-12">验证码：<span class="required">*</span></label>
+																<div class="col-md-9 col-sm-9 col-xs-12">
+																	<input type="text" id="userVsCodeValue" class="form-control" placeholder="">
+																	<button type="button" id="userVsCode" data-type="user-only"  class="vscode btn btn-success" onclick="createCode(this.id)">SHDC</button>
+																</div>
+															</div>
+															<div class="form-group user-only">
+																<label class="tl control-label col-md-3 col-sm-3 col-xs-12">备注：</label>
+																<div class="col-md-9 col-sm-9 col-xs-12">
+																	<textarea class="form-control" rows="3" placeholder="备注"></textarea>
+																</div>
+															</div>
+															<!--添加用户dom结束-->
+															<!--添加代理dom开始-->
+															<div class="form-group agent-only">
+																<label class="tl control-label col-md-3 col-sm-3 col-xs-12">上级代理：</label>
+																<div class="col-md-9 col-sm-9 col-xs-12">
+																	<input type="text" class="form-control" placeholder="">
+																</div>
+															</div>
+															<div class="form-group agent-only">
+																<label class="tl control-label col-md-3 col-sm-3 col-xs-12">代理名：<span class="required">*</span></label>
+																<div class="col-md-9 col-sm-9 col-xs-12">
+																	<input type="text" class="form-control" placeholder="">
+																</div>
+															</div>
+															<div class="form-group agent-only">
+																<label class="tl control-label col-md-3 col-sm-3 col-xs-12">密码：<span class="required">*</span></label>
+																<div class="col-md-9 col-sm-9 col-xs-12">
+																	<input type="text" class="form-control" placeholder="">
+																</div>
+															</div>
+															<div class="form-group agent-only">
+																<label class="tl control-label col-md-3 col-sm-3 col-xs-12">别名：</label>
+																<div class="col-md-9 col-sm-9 col-xs-12">
+																	<input type="text" class="form-control" placeholder="">
+																</div>
+															</div>
+															<div class="form-group agent-only">
+																<label class="tl control-label col-md-3 col-sm-3 col-xs-12">电话：</label>
+																<div class="col-md-9 col-sm-9 col-xs-12">
+																	<input type="text" class="form-control" placeholder="">
+																</div>
+															</div>
+															<div class="form-group agent-only">
+																<label class="tl control-label col-md-3 col-sm-3 col-xs-12">邮箱：</label>
+																<div class="col-md-9 col-sm-9 col-xs-12">
+																	<input type="text" class="form-control" placeholder="">
+																</div>
+															</div>
+															<div class="form-group agent-only">
+																<label class="tl control-label col-md-3 col-sm-3 col-xs-12">验证码：<span class="required">*</span></label>
+																<div class="col-md-9 col-sm-9 col-xs-12">
+																	<input type="text" id="agentVsCodeValue" class="form-control" placeholder="">
+																	<button type="button" id="agentVsCode" data-type="agent-only" class="vscode btn btn-success" onclick="createCode(this.id)">SHDC</button>
+																</div>
+															</div>
+															<div class="form-group agent-only">
+																<label class="tl control-label col-md-3 col-sm-3 col-xs-12">备注：</label>
+																<div class="col-md-9 col-sm-9 col-xs-12">
+																	<input type="text" class="form-control" placeholder="">
+																</div>
+															</div>
+															<div class="form-group agent-only">
+																<label class="tl control-label col-md-3 col-sm-3 col-xs-12">占成比：</label>
+																<div class="col-md-9 col-sm-9 col-xs-12">
+																	<input type="text" class="form-control" placeholder="">
+																</div>
+															</div>
+															<div class="form-group agent-only">
+																<label class="tl control-label col-md-3 col-sm-3 col-xs-12">洗码比：</label>
+																<div class="col-md-9 col-sm-9 col-xs-12">
+																	<input type="text" class="form-control" placeholder="">
+																</div>
+															</div>
+															<div class="form-group agent-only">
+																<label class="tl control-label col-md-3 col-sm-3 col-xs-12">返点比：</label>
+																<div class="col-md-9 col-sm-9 col-xs-12">
+																	<input type="text" class="form-control" placeholder="">
+																</div>
+															</div>
+															<!--添加代理dom结束-->
+														</form>
+													</div>
+													<div class="modal-footer">
+														<button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+														<button type="button" class="btn btn-primary" onclick="addUserSubmit()">确定</button>
+													</div>
+												</div>
+											</div>
+										</div>
+										<!--  添加下线/用户模态框结束  -->
+										<!--  编辑代理模态框开始  -->
+										<div class="modal fade bs-example-modal-sm edit-agent-modal" tabindex="-1" role="dialog" aria-hidden="true">
+											<div class="modal-dialog">
+												<div class="modal-content">
+													<div class="modal-header">
+														<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+															<span aria-hidden="true">×</span>
+	                          							</button>
+														<h2 class="modal-title" id="myModalLabel2">编辑代理</h2>
+													</div>
+													<div class="modal-body">
+														<form class="form-horizontal form-label-left">
+															<div class="form-group">
+																<label class="tl control-label col-md-4 col-sm-4 col-xs-12">状态：</label>
+																<div class="radio col-md-4 col-sm-4 col-xs-6">
+																	<label style="width:100%;">
+																	  <input type="radio" value="option1" name="optionsRadios" > 启用
+																	</label>
+																</div>
+																<div class="radio col-md-4 col-sm-4 col-xs-6">
+																	<label style="width:100%;">
+																  <input type="radio" value="option2" name="optionsRadios" checked > 禁用
+																</label>
+																</div>
+															</div>
+															<!--编辑代理dom开始-->
+															<div class="form-group">
+																<label class="tl control-label col-md-3 col-sm-3 col-xs-12">上级代理：</label>
+																<div class="col-md-9 col-sm-9 col-xs-12">
+																	<input type="text" class="form-control" placeholder="" readonly="readonly">
+																</div>
+															</div>
+															<div class="form-group">
+																<label class="tl control-label col-md-3 col-sm-3 col-xs-12">代理名：<span class="required">*</span></label>
+																<div class="col-md-9 col-sm-9 col-xs-12">
+																	<input type="text" class="form-control" placeholder=""  readonly="readonly">
+																</div>
+															</div>
+															<div class="form-group">
+																<label class="tl control-label col-md-3 col-sm-3 col-xs-12">密码：<span class="required">*</span></label>
+																<div class="col-md-9 col-sm-9 col-xs-12">
+																	<input type="text" class="form-control" placeholder="">
+																</div>
+															</div>
+															<div class="form-group">
+																<label class="tl control-label col-md-3 col-sm-3 col-xs-12">别名：</label>
+																<div class="col-md-9 col-sm-9 col-xs-12">
+																	<input type="text" class="form-control" placeholder="">
+																</div>
+															</div>
+															<div class="form-group">
+																<label class="tl control-label col-md-3 col-sm-3 col-xs-12">电话：</label>
+																<div class="col-md-9 col-sm-9 col-xs-12">
+																	<input type="text" class="form-control" placeholder="">
+																</div>
+															</div>
+															<div class="form-group">
+																<label class="tl control-label col-md-3 col-sm-3 col-xs-12">邮箱：</label>
+																<div class="col-md-9 col-sm-9 col-xs-12">
+																	<input type="text" class="form-control" placeholder="">
+																</div>
+															</div>
+															<div class="form-group">
+																<label class="tl control-label col-md-3 col-sm-3 col-xs-12">验证码：<span class="required">*</span></label>
+																<div class="col-md-9 col-sm-9 col-xs-12">
+																	<input type="text" id="editAgentVsCodeValue" class="form-control" placeholder="">
+																	<button type="button" id="editAgentVsCode"  class="vscode btn btn-success" onclick="createCode(this.id)">SHDC</button>
+																</div>
+															</div>
+															<div class="form-group">
+																<label class="tl control-label col-md-3 col-sm-3 col-xs-12">备注：</label>
+																<div class="col-md-9 col-sm-9 col-xs-12">
+																	<input type="text" class="form-control" placeholder="">
+																</div>
+															</div>
+															<div class="form-group">
+																<label class="tl control-label col-md-3 col-sm-3 col-xs-12">占成比：</label>
+																<div class="col-md-9 col-sm-9 col-xs-12">
+																	<input type="text" class="form-control" placeholder="">
+																</div>
+															</div>
+															<div class="form-group">
+																<label class="tl control-label col-md-3 col-sm-3 col-xs-12">洗码比：</label>
+																<div class="col-md-9 col-sm-9 col-xs-12">
+																	<input type="text" class="form-control" placeholder="">
+																</div>
+															</div>
+															<div class="form-group">
+																<label class="tl control-label col-md-3 col-sm-3 col-xs-12">返点比：</label>
+																<div class="col-md-9 col-sm-9 col-xs-12">
+																	<input type="text" class="form-control" placeholder="">
+																</div>
+															</div>
+															<!--编辑代理dom结束-->
+														</form>
+													</div>
+													<div class="modal-footer">
+														<button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+														<button type="button" class="btn btn-primary" onclick="editAgentSubmit()">确定</button>
+													</div>
+												</div>
+											</div>
+										</div>
+										<!--  编辑代理模态框结束  -->
+										<!--  编辑用户模态框开始  -->
+										<div class="modal fade bs-example-modal-sm edit-user-modal" tabindex="-1" role="dialog" aria-hidden="true">
+											<div class="modal-dialog">
+												<div class="modal-content">
+													<div class="modal-header">
+														<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+															<span aria-hidden="true">×</span>
+	                          							</button>
+														<h2 class="modal-title" id="myModalLabel2">编辑用户</h2>
+													</div>
+													<div class="modal-body">
+														<form class="form-horizontal form-label-left">
+															<div class="form-group ">
+																<label class="tl control-label col-md-4 col-sm-4 col-xs-12">状态：</label>
+																<div class="radio col-md-4 col-sm-4 col-xs-6">
+																	<label style="width:100%;">
+																	  <input type="radio" value="option1"  name="optionsRadios" > 禁用
+																	</label>
+																</div>
+																<div class="radio col-md-4 col-sm-4 col-xs-6">
+																	<label style="width:100%;">
+																  <input type="radio" value="option2" name="optionsRadios" checked > 启用
+																</label>
+																</div>
+															</div>
+															<!--编辑用户dom开始-->
+															<div class="form-group">
+																<label class="tl control-label col-md-3 col-sm-3 col-xs-12">上级代理：</label>
+																<div class="col-md-9 col-sm-9 col-xs-12">
+																	<input type="text" class="form-control" placeholder="" readonly="readonly">
+																</div>
+															</div>
+															<div class="form-group">
+																<label class="tl control-label col-md-3 col-sm-3 col-xs-12">用户名：<span class="required">*</span></label>
+																<div class="col-md-9 col-sm-9 col-xs-12">
+																	<input type="text" class="form-control" placeholder="" readonly="readonly">
+																</div>
+															</div>
+															<div class="form-group">
+																<label class="tl control-label col-md-3 col-sm-3 col-xs-12">密码：<span class="required">*</span></label>
+																<div class="col-md-9 col-sm-9 col-xs-12">
+																	<input type="text" class="form-control" placeholder="">
+																</div>
+															</div>
+															<div class="form-group">
+																<label class="tl control-label col-md-3 col-sm-3 col-xs-12">别名：</label>
+																<div class="col-md-9 col-sm-9 col-xs-12">
+																	<input type="text" class="form-control" placeholder="">
+																</div>
+															</div>
+															<div class="form-group">
+																<label class="tl control-label col-md-3 col-sm-3 col-xs-12">电话：</label>
+																<div class="col-md-9 col-sm-9 col-xs-12">
+																	<input type="text" class="form-control" placeholder="">
+																</div>
+															</div>
+															<div class="form-group">
+																<label class="tl control-label col-md-3 col-sm-3 col-xs-12">邮箱：</label>
+																<div class="col-md-9 col-sm-9 col-xs-12">
+																	<input type="text" class="form-control" placeholder="">
+																</div>
+															</div>
+															<div class="form-group">
+																<label class="tl control-label col-md-3 col-sm-3 col-xs-12">验证码：<span class="required">*</span></label>
+																<div class="col-md-9 col-sm-9 col-xs-12">
+																	<input type="text" id="editUserVsCodeValue" class="form-control" placeholder="">
+																	<button type="button" id="editUserVsCode" class="vscode btn btn-success" onclick="createCode(this.id)">SHDC</button>
+																</div>
+															</div>
+															<div class="form-group">
+																<label class="tl control-label col-md-3 col-sm-3 col-xs-12">备注：</label>
+																<div class="col-md-9 col-sm-9 col-xs-12">
+																	<textarea class="form-control" rows="3" placeholder="备注"></textarea>
+																</div>
+															</div>
+															<!--编辑用户dom结束-->
+														</form>
+													</div>
+													<div class="modal-footer">
+														<button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+														<button type="button" class="btn btn-primary" onclick="editUserSubmit()">确定</button>
+													</div>
+												</div>
+											</div>
+										</div>
+										<!--  编辑用户模态框结束  -->										
+
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- /page content -->
+
+				<!-- footer content -->
+				<footer>
+					<div class="pull-right">
+						Gentelella - Bootstrap Admin Template by
+						<a href="https://colorlib.com">Colorlib</a>
+					</div>
+					<div class="clearfix"></div>
+				</footer>
+				<!-- /footer content -->
+			</div>
+		</div>
+
+		<!-- jQuery -->
+		<script src="css/jquery/dist/jquery.min.js"></script>
+		<!-- Bootstrap -->
+		<script src="css/bootstrap/dist/js/bootstrap.min.js"></script>
+		<!-- FastClick -->
+		<script src="css/fastclick/lib/fastclick.js"></script>
+		<!-- NProgress -->
+		<script src="css/nprogress/nprogress.js"></script>
+		<!-- iCheck -->
+		<script src="css/iCheck/icheck.min.js"></script>
+
+		<!-- Custom Theme Scripts -->
+		<script src="js/custom.min.js"></script>
+		<!--  -->
+		<script type="text/javascript">
+			/**
+			*弹出添加代理或用户模态框时，切换显示dom
+			*/
+			function toggleContent(showdom,hidedom){
+				$("."+showdom).show();
+				$("."+hidedom).hide();
+				createCode($("[data-type='"+showdom+"']")[0].id);
+				$("#userVsCodeValue").val("");
+				$("#agentVsCodeValue").val("");
+			}
+			
+			/**
+			*设置验证码
+			*/
+			var ogcode; //在全局定义验证码  
+			function createCode(id) {
+				ogcode = "";
+				var codeLength = 4; //验证码的长度  
+				var checkCode = document.getElementById(id);
+				var random = new Array(0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R',
+					'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'); //随机数  
+				for(var i = 0; i < codeLength; i++) { //循环操作  
+					var index = Math.floor(Math.random() * 36); //取得随机数的索引（0~35）  
+					ogcode += random[index]; //根据索引取得随机数加到code上  
+				}
+				checkCode.innerHTML = ogcode; //把code值赋给验证码  
+			}
+			//校验验证码  
+			function validateCode(id) {
+				var inputCode = document.getElementById(id).value.toUpperCase(); //取得输入的验证码并转化为大写     
+				var checkCodeFlag = false;
+				if(inputCode.length <= 0) { //若输入的验证码长度为0
+					alert("请输入验证码！"); //则弹出请输入验证码  
+				} else if(inputCode != ogcode) { //若输入的验证码与产生的验证码不一致时  
+					alert("验证码输入错误"); //则弹出验证码输入错误  
+					document.getElementById(id).value = ""; //清空文本框  
+				} else { //输入正确时  
+					checkCodeFlag = true;
+				}
+				return checkCodeFlag;
+			}
+			//创建添加用户使用的校验码
+			createCode('userVsCode');
+			
+			/**
+			*添加用户或者代理的提交js方法
+			*/
+			function addUserSubmit(){
+			//判断当前是添加用户还是添加代理
+				if($("#daili")[0].checked){
+					if(validateCode("agentVsCodeValue")){
+						$('.add-level').modal('hide');
+					}
+				}else{
+					if(validateCode("userVsCodeValue")){
+						$('.add-level').modal('hide');
+					}				
+				}		
+			}
+			
+			/**
+			 * 打开编辑代理模态框时初始化验证码
+			 */
+			$('.edit-agent-modal').on('show.bs.modal', function () {
+				$("#editAgentVsCodeValue").val("");
+			    createCode('editAgentVsCode');
+			});
+			
+			/**
+			 * 提交编辑代理信息时验证验证码
+			 */
+			function editAgentSubmit(){
+				if(validateCode("editAgentVsCodeValue")){
+					$('.edit-agent-modal').modal('hide');
+				}								
+			}
+			
+			/**
+			 * 打开用户代理模态框时初始化验证码
+			 */
+			$('.edit-user-modal').on('show.bs.modal', function () {
+				$("#editUserVsCodeValue").val("");
+			    createCode('editUserVsCode');
+			});
+			
+			/**
+			 * 提交编辑代理信息时验证验证码
+			 */
+			function editUserSubmit(){
+				if(validateCode("editUserVsCodeValue")){
+					$('.edit-user-modal').modal('hide');
+				}								
+			}			
+		</script>
+	</body>
+
+</html>
